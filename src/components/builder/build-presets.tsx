@@ -12,9 +12,9 @@ const PRESETS = [
     icon: <Zap className="w-4 h-4" />,
   },
   {
-    name: '长城守卫军',
+    name: '北方阵线',
     ids: ['char-huamulan', 'char-kai', 'char-wangzhaojun', 'char-jialuo'],
-    desc: '攻守兼备的北方阵容',
+    desc: '来自王者大陆北方的英雄集结',
     icon: <Shield className="w-4 h-4" />,
   },
   {

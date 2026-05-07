@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import type { SearchResult } from '@/lib/search';
-import { Search, User, Sword, Map, MapPin, FileText } from 'lucide-react';
+import { Search, User, Sword, Map, MapPin, FileText, Globe } from 'lucide-react';
 import { SearchAutocomplete } from './search-autocomplete';
 import { cn } from '@/lib/utils';
 
@@ -13,6 +13,7 @@ const typeIcons: Record<string, React.ReactNode> = {
   '地图': <Map className="w-4 h-4" />,
   '地点': <MapPin className="w-4 h-4" />,
   '攻略': <FileText className="w-4 h-4" />,
+  '世界观': <Globe className="w-4 h-4" />,
 };
 
 const typeColors: Record<string, string> = {
@@ -21,6 +22,7 @@ const typeColors: Record<string, string> = {
   '地图': 'bg-green-500/20 text-green-400 border-green-500/30',
   '地点': 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
   '攻略': 'bg-purple-500/20 text-purple-400 border-purple-500/30',
+  '世界观': 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30',
 };
 
 interface Props {

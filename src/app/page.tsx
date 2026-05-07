@@ -35,7 +35,7 @@ export default function HomePage() {
           <span className="text-primary">攻略站</span>
         </h1>
         <p className="text-text-muted text-lg mb-6 max-w-2xl mx-auto">
-          最全角色图鉴、武器大全、地图探索点位、任务流程攻略、配队模拟器
+          最全角色图鉴、武器大全、地图探索点位、任务流程攻略、配队模拟器与王者大陆世界观
         </p>
         <div className="max-w-md mx-auto">
           <SearchAutocomplete placeholder="搜索英雄、武器、攻略..." size="lg" />

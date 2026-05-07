@@ -1,7 +1,7 @@
 import type { RegionDetail, ChestType } from '@/types';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Badge } from '@/components/shared/badge';
-import { MapPin, Gem, Package, Mountain } from 'lucide-react';
+import { MapPin, Gem, Package, Mountain, Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface RegionDetailContentProps {
@@ -27,6 +27,20 @@ export function RegionDetailContent({ region }: RegionDetailContentProps) {
           <Badge label={`宝箱 × ${region.chests.length}`} />
           <Badge label={`传送点 × ${region.waypoints.length}`} />
           <Badge label={`收集品 × ${region.collectibles.length}`} />
+        </div>
+      </div>
+
+      {/* 世界观关联 */}
+      <div className="bg-card rounded-xl border border-primary/20 p-4 flex items-start gap-3">
+        <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+          <Globe className="w-5 h-5 text-primary" />
+        </div>
+        <div>
+          <h3 className="font-medium text-sm">王者大陆位置</h3>
+          <p className="text-sm text-text-muted mt-1">
+            {region.name}位于王者大陆<strong>「逐鹿」</strong>区域，属于稷下学院周边地带。
+            在<a href="/world" className="text-primary hover:underline">世界观</a>中可查看王者大陆全貌。
+          </p>
         </div>
       </div>
 

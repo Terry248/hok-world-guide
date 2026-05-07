@@ -52,6 +52,7 @@ export function getCharacterOrigin(characterName: string): { region: string; cit
     '孙膑': { region: '逐鹿', city: '稷下学院' },
     '蒙犽': { region: '逐鹿', city: '稷下学院' },
     '鲁班大师': { region: '逐鹿', city: '稷下学院' },
+    '冷春': { region: '逐鹿', city: '稷下学院' },
     '花木兰': { region: '河洛', city: '长城' },
     '铠': { region: '河洛', city: '长城' },
     '王昭君': { region: '北荒', city: '狼旗' },

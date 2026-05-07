@@ -20,7 +20,7 @@ export default function AboutPage() {
         <div className="bg-card rounded-xl border border-border p-6 space-y-4 text-text-muted leading-relaxed">
           <p>
             <strong className="text-foreground">王者荣耀世界攻略站</strong> 是一个为玩家提供游戏攻略信息的网站。
-            包含角色图鉴、武器大全、地图探索点位、任务流程攻略、战斗攻略和配队模拟器等功能。
+            包含角色图鉴、武器大全、地图探索点位、任务流程攻略、战斗攻略、配队模拟器和王者大陆世界观等功能。
           </p>
           <p>
             本站为玩家自制攻略站，与游戏官方无关。所有数据来源于玩家社区贡献和游戏内实测。

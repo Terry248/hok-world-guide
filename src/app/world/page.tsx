@@ -212,9 +212,9 @@ const worldCharacters = [
   { id: 'char-sunbin', name: '孙膑', title: '逆流之时 · 风元素辅助', image: '/images/characters/sunbin.jpg' },
   { id: 'char-mengya', name: '蒙犽', title: '烈炮小子 · 火元素输出', image: '/images/characters/meng-ya.jpg' },
   { id: 'char-lubandashi', name: '鲁班大师', title: '神匠 · 岩元素辅助', image: '/images/characters/luban-master.jpg' },
-  { id: 'char-lengchun', name: '冷春', title: '绯瞳刃舞 · 冰元素输出', image: '/images/characters/lengchun.jpg' },
+  { id: 'char-lengchun', name: '冷春', title: '绯瞳刃舞 · 暗元素输出', image: '/images/characters/lengchun.jpg' },
   { id: 'char-huamulan', name: '花木兰', title: '传说之刃 · 火元素主C', image: '/images/characters/huamulan.jpg' },
-  { id: 'char-kai', name: '铠', title: '破灭刃锋 · 暗元素主C', image: '/images/characters/kai.jpg' },
+  { id: 'char-kai', name: '铠', title: '破灭刃锋 · 冰元素主C', image: '/images/characters/kai.jpg' },
   { id: 'char-wangzhaojun', name: '王昭君', title: '冰雪之华 · 冰元素辅助', image: '/images/characters/wang-zhaojun.jpg' },
   { id: 'char-jialuo', name: '伽罗', title: '破魔之箭 · 光元素输出', image: '/images/characters/jialuo.jpg' },
 ];
