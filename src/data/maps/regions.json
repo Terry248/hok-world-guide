@@ -1,0 +1,74 @@
+[
+  {
+    "id": "region-001",
+    "name": "河洛·长安",
+    "description": "王者大陆的政治文化中心，盛唐风格的繁华都城，由墨子大师奠基于万象天工之上",
+    "coverImage": "/images/maps/chang-an.png"
+  },
+  {
+    "id": "region-002",
+    "name": "三分之地",
+    "description": "大陆东南方的三国文化区域，水乡、关隘与古战场交织，赤壁、长坂坡等经典战场重现",
+    "coverImage": "/images/maps/sanfen-land.png"
+  },
+  {
+    "id": "region-003",
+    "name": "稷下·逐鹿",
+    "description": "河洛以南的学术圣地，稷下学院规模宏大，藏有大量宝箱、试炼与机关解谜",
+    "coverImage": "/images/maps/jixia.png"
+  },
+  {
+    "id": "region-004",
+    "name": "北荒",
+    "description": "苍茫的冰原荒漠，地貌肃穆冷峻，栖息着凶猛的冰原野兽，中部三大区域之一",
+    "coverImage": "/images/maps/beihuang.png"
+  },
+  {
+    "id": "region-005",
+    "name": "云中末地",
+    "description": "边塞要塞，地形险峻，西云落高地与东云落高地分布其间，与姜子牙、东皇太一有深厚渊源",
+    "coverImage": "/images/maps/yunzhong.png"
+  },
+  {
+    "id": "region-006",
+    "name": "日落海",
+    "description": "西北沿海的西方奇幻海洋城邦，含海都与日落圣殿，杨戬、鬼谷子等角色活跃于此",
+    "coverImage": "/images/maps/sunset-sea.png"
+  },
+  {
+    "id": "region-007",
+    "name": "云梦泽",
+    "description": "水天一色的广阔沼泽，侧重解谜探索，传说深处沉睡着远古神龙",
+    "coverImage": "/images/maps/yunmengze.png"
+  },
+  {
+    "id": "region-008",
+    "name": "长城",
+    "description": "长城守卫军的驻地，适合组队挑战Boss，花木兰在此统领守卫军守护大陆",
+    "coverImage": "/images/maps/great-wall.png"
+  },
+  {
+    "id": "region-009",
+    "name": "东风海域·扶桑",
+    "description": "东方海域的扶桑文化区域，宫本武藏等日本风格英雄角色分布于此",
+    "coverImage": "/images/maps/dongfeng-sea.png"
+  },
+  {
+    "id": "region-010",
+    "name": "建木",
+    "description": "独立的特殊区域，远古神树贯穿天地，蕴含强大的自然之力",
+    "coverImage": "/images/maps/jianmu.png"
+  },
+  {
+    "id": "region-011",
+    "name": "大河流域",
+    "description": "壮阔的大河贯穿区域，水陆交错，是连接各大区域的重要交通枢纽",
+    "coverImage": "/images/maps/river-basin.png"
+  },
+  {
+    "id": "region-012",
+    "name": "天柱墟",
+    "description": "特殊的地上/地下双层区域，传说中远古天柱的废墟，隐藏着远古文明的秘密",
+    "coverImage": "/images/maps/tianzhu-xu.png"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "id": "region-003",
+  "name": "稷下·逐鹿",
+  "description": "河洛以南的学术圣地，稷下学院坐落其间。教学楼、演武场、藏书阁、观星台与魔道学院交相辉映，藏有大量宝箱、试炼与机关解谜。",
+  "chests": [
+    { "id": "chest-001", "type": "华丽", "location": "观星台顶层星象仪中央", "puzzle": "需按星图上十二星座顺序旋转星象环" },
+    { "id": "chest-002", "type": "珍贵", "location": "魔道学院地下炼金密室", "puzzle": "调配正确的三瓶炼金药水解开魔法封印" },
+    { "id": "chest-003", "type": "珍贵", "location": "藏书阁最深处禁书架后方", "puzzle": "按书架上古籍的颜色排列顺序触发机关" },
+    { "id": "chest-004", "type": "珍贵", "location": "演武场地下试炼场终点", "puzzle": "通过演武场三层试炼挑战" },
+    { "id": "chest-005", "type": "精致", "location": "教学楼顶层钟楼齿轮间", "puzzle": "调整钟楼四面时钟至正确时刻" },
+    { "id": "chest-006", "type": "精致", "location": "魔道学院后山符文石阵中心", "puzzle": "按五行顺序点亮符文石" },
+    { "id": "chest-007", "type": "精致", "location": "藏书阁东侧回廊尽头暗格", "puzzle": "找到并阅读回廊墙壁上的隐藏铭文" },
+    { "id": "chest-008", "type": "精致", "location": "教学楼地下室机关走廊终点", "puzzle": "躲避走廊内的翻转地板陷阱" },
+    { "id": "chest-009", "type": "精致", "location": "观星台西侧露台栏杆下方", "puzzle": "夜间星空出现特定星座时" },
+    { "id": "chest-010", "type": "精致", "location": "演武场南侧兵器库角落", "puzzle": "将兵器架上武器按正确顺序排列" },
+    { "id": "chest-011", "type": "普通", "location": "教学楼一层走廊窗台下方" },
+    { "id": "chest-012", "type": "普通", "location": "藏书阁入口台阶旁花坛中" },
+    { "id": "chest-013", "type": "普通", "location": "演武场看台最上层座位下" },
+    { "id": "chest-014", "type": "普通", "location": "观星台底层楼梯背面凹槽" },
+    { "id": "chest-015", "type": "普通", "location": "魔道学院前庭喷泉池底" },
+    { "id": "chest-016", "type": "普通", "location": "稷下学院南门两侧石柱基座" },
+    { "id": "chest-017", "type": "普通", "location": "教学楼后花园凉亭石桌下" },
+    { "id": "chest-018", "type": "普通", "location": "藏书阁顶层天窗旁通风口" },
+    { "id": "chest-019", "type": "普通", "location": "魔道学院实验台下方暗柜" },
+    { "id": "chest-020", "type": "普通", "location": "演武场外围练功木人桩后" }
+  ],
+  "waypoints": [
+    { "id": "wp-001", "name": "稷下学院", "location": "学院正门入学广场" },
+    { "id": "wp-002", "name": "魔道学院", "location": "魔道学院一层大厅入口" },
+    { "id": "wp-003", "name": "观星台", "location": "观星台底层螺旋阶梯入口" },
+    { "id": "wp-004", "name": "演武场", "location": "演武场中央擂台旁" },
+    { "id": "wp-005", "name": "藏书阁", "location": "藏书阁正门前石阶平台" }
+  ],
+  "collectibles": [
+    { "name": "学院石板", "count": 18, "locations": ["散落在教学楼各处走廊", "藏书阁书架顶层", "观星台台阶缝隙中"] },
+    { "name": "珞蔓墟机关零件", "count": 14, "locations": ["魔道学院炼金工作台", "教学楼钟楼齿轮间", "演武场地下试炼场机关旁"] },
+    { "name": "木蚀余迹精华", "count": 10, "locations": ["稷下学院后山枯木林中", "藏书阁地下旧书库", "学院南门古树上"] }
+  ]
+}

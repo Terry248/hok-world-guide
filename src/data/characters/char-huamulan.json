@@ -1,0 +1,70 @@
+{
+  "id": "char-huamulan",
+  "name": "花木兰",
+  "title": "无双剑士",
+  "element": "火",
+  "weaponType": "剑",
+  "rarity": 5,
+  "role": "输出",
+  "avatar": "/images/characters/huamulan.png",
+  "stats": {
+    "hp": 13000,
+    "attack": 360,
+    "defense": 220,
+    "speed": 320,
+    "critRate": 12.0,
+    "critDamage": 60.0
+  },
+  "skills": [
+    {
+      "name": "轻剑连斩",
+      "type": "普攻",
+      "description": "挥舞轻剑进行最多五段连续斩击，叠加5层锋痕触发沉默+减速效果。蓄力普攻可向前突进并发动强力挥砍。",
+      "multipliers": [0.5, 0.5, 0.5, 0.7, 1.0]
+    },
+    {
+      "name": "轻剑1技能·投剑",
+      "type": "战技",
+      "description": "投掷轻剑，命中敌人后获得迅烈剑意，剑吸附敌身周持续造成伤害。可反制敌人红光技。",
+      "multipliers": [2.0]
+    },
+    {
+      "name": "轻剑2技能·空裂斩",
+      "type": "战技",
+      "description": "突进并对路径敌人造成沉默效果。轻剑形态下灵活突进+沉默，重剑形态下为霸体蓄力攻击。",
+      "multipliers": [1.8]
+    },
+    {
+      "name": "重剑形态·破军",
+      "type": "终结技",
+      "description": "切换至重剑形态，进入霸体免伤状态，主打爆发秒C、团战切入。重剑形态下的攻击造成大量范围火元素伤害，具备秒杀脆皮能力。",
+      "multipliers": [3.0]
+    },
+    {
+      "name": "双剑合一",
+      "type": "天赋",
+      "description": "轻剑与重剑形态之间自由切换。轻剑形态灵活突进+沉默，重剑形态霸体免伤+爆发。利用高机动性切入后排，爆发极高。完美闪避反击时，普攻强化为两次迅疾挥斩。长城守卫军领袖，前排承受伤害+控制兼备。"
+    },
+    {
+      "name": "疾行",
+      "type": "秘技",
+      "description": "在地图上使用时，快速突进一段距离，穿越狭窄的通道和障碍。"
+    }
+  ],
+  "constellations": [
+    { "level": 1, "name": "轻剑", "description": "轻剑连斩的锋痕层数需求减少1层" },
+    { "level": 2, "name": "重剑", "description": "重剑形态的免伤比例提升20%" },
+    { "level": 3, "name": "无双", "description": "空裂斩技能等级+3" },
+    { "level": 4, "name": "切入", "description": "重剑切入后的爆发伤害提升30%" },
+    { "level": 5, "name": "形态", "description": "终结技技能等级+3" },
+    { "level": 6, "name": "无双剑士", "description": "轻剑沉默后，重剑攻击必定暴击" }
+  ],
+  "recommendedWeapons": ["wp-003", "wp-009"],
+  "recommendedTeams": [["char-dongfangyao", "char-xishi", "char-sunbin"], ["char-yuanliu", "char-wangzhaojun", "char-lengchun"]],
+  "ascensionMaterials": [
+    { "name": "火焰精华", "count": 46 },
+    { "name": "剑心碎片", "count": 20 },
+    { "name": "将军徽记", "count": 18 }
+  ],
+  "lore": "花木兰，无双剑士，长城守卫军领袖。在王者荣耀世界中，花木兰是对抗位多维战力型角色，T0共鸣。她拥有独特的双形态切换机制——轻剑形态（灵活突进/沉默）与重剑形态（霸体免伤/爆发）。利用高机动性切入后排，爆发极高，具备秒杀脆皮能力，但切入后容错率低，易被集火。作为前排承受伤害+控制的角色，她在团队中既是输出核心也是战术支点。"
+}

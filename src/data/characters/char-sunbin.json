@@ -1,0 +1,70 @@
+{
+  "id": "char-sunbin",
+  "name": "孙膑",
+  "title": "时光守护者",
+  "element": "风",
+  "weaponType": "法杖",
+  "rarity": 5,
+  "role": "辅助",
+  "avatar": "/images/characters/sunbin.png",
+  "stats": {
+    "hp": 10200,
+    "attack": 250,
+    "defense": 150,
+    "speed": 320,
+    "critRate": 5.0,
+    "critDamage": 50.0
+  },
+  "skills": [
+    {
+      "name": "时空打击",
+      "type": "普攻",
+      "description": "操控时间之力进行攻击。第四次普攻附带轻微击退效果。被动效果：释放技能增加移速。",
+      "multipliers": [0.5, 0.5, 0.5, 0.8]
+    },
+    {
+      "name": "一技能·时空爆弹",
+      "type": "战技",
+      "description": "投掷延时炸弹，延迟后爆炸造成范围风元素伤害+减速效果。爆弹附着在敌人身上的期间，受到攻击将提升爆炸伤害。",
+      "multipliers": [1.8]
+    },
+    {
+      "name": "二技能·时光回溯",
+      "type": "战技",
+      "description": "为团队加速并回溯伤害。展开力场使队友获得移动速度加成，力场消失时回复队友在力场期间受到伤害的一定比例。波动状态下持续吸收能量，时空连珠连续发射时空之力造成远程输出。",
+      "multipliers": [1.0]
+    },
+    {
+      "name": "三技能·时光流逝",
+      "type": "终结技",
+      "description": "展开圆形力场，对范围内敌人造成风元素伤害、大幅减速和沉默效果。是目前唯一能给队友充大招能量的辅助技能。",
+      "multipliers": [1.2]
+    },
+    {
+      "name": "时间加速",
+      "type": "天赋",
+      "description": "核心辅助技能。给队友提供加速增益，是团队增益型辅助。围绕队友和核心输出英雄，叠加buff，创造输出环境。"
+    },
+    {
+      "name": "时光回溯",
+      "type": "秘技",
+      "description": "在地图上使用时，短时间内加速全队移动速度。"
+    }
+  ],
+  "constellations": [
+    { "level": 1, "name": "时空", "description": "时空爆弹的爆炸伤害提升20%" },
+    { "level": 2, "name": "加速", "description": "时间加速的增益效果提升15%" },
+    { "level": 3, "name": "守护者", "description": "时空爆弹技能等级+3" },
+    { "level": 4, "name": "力场", "description": "时光流逝的沉默持续时间延长1秒" },
+    { "level": 5, "name": "流逝", "description": "终结技技能等级+3" },
+    { "level": 6, "name": "时光倒流", "description": "队友在时光流逝力场内死亡时，可回复20%生命值（每60秒一次）" }
+  ],
+  "recommendedWeapons": ["wp-006", "wp-004"],
+  "recommendedTeams": [["char-mengya", "char-jialuo", "char-yuanliu"], ["char-dongfangyao", "char-wangzhaojun", "char-huamulan"]],
+  "ascensionMaterials": [
+    { "name": "风灵之花", "count": 46 },
+    { "name": "时光沙漏", "count": 20 },
+    { "name": "时光碎片", "count": 18 }
+  ],
+  "lore": "孙膑，时光守护者。在王者荣耀世界中，孙膑是团队增益型辅助，定位时间操控团队增益。目前唯一能给队友充大招能量的辅助。他的时空爆弹可以附着在敌人身上的延迟爆炸，时光流逝则能展开大范围控制力场。搭配蒙犽可延长破势时间偷输出，是远程输出队伍的最佳搭档。被动释放技能增加移速的特性使其在战场上具有极高的机动性。"
+}

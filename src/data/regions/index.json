@@ -1,0 +1,56 @@
+[
+  {
+    "id": "region-sanfen",
+    "name": "三分之地",
+    "description": "新手启程区，三国文化背景。玩家冒险从这里开始，逐步探索王者荣耀世界的广袤大陆。",
+    "coverImage": "/images/regions/sanfen.jpg"
+  },
+  {
+    "id": "region-dongfeng",
+    "name": "东风海域",
+    "description": "扶桑风格的海域区域，东方剑术系英雄常驻。海洋城邦与和风文化交融的奇幻之地。",
+    "coverImage": "/images/regions/dongfeng.jpg"
+  },
+  {
+    "id": "region-jianmu",
+    "name": "建木",
+    "description": "上古神话题材，浮空神域与日之塔所在。承载神魔世界观设定，可接触神魔系英雄任务。",
+    "coverImage": "/images/regions/jianmu.jpg"
+  },
+  {
+    "id": "region-heluo",
+    "name": "河洛",
+    "description": "以盛唐长安为原型的繁华都市，是整个故事和玩法的核心枢纽。体验正统王者剧情的重要区域。",
+    "coverImage": "/images/regions/heluo.jpg"
+  },
+  {
+    "id": "region-jixia",
+    "name": "稷下",
+    "description": "仙学风雅的学术圣地，群山环绕。春溪原是入门区域，稷下山区设有秘法祭坛等协作挑战。",
+    "coverImage": "/images/regions/jixia.jpg"
+  },
+  {
+    "id": "region-yunzhong",
+    "name": "云中漠地",
+    "description": "荒凉漠地，带有西域风情。与海月、云中神君等英雄剧情密切相关，充满边塞气息。",
+    "coverImage": "/images/regions/yunzhong.jpg"
+  },
+  {
+    "id": "region-riluo",
+    "name": "日落海",
+    "description": "海都地区，西方奇幻风格。包含海都、日落圣殿、王者峡谷等标志性场景。",
+    "coverImage": "/images/regions/riluo.jpg"
+  },
+  {
+    "id": "region-beihuang",
+    "name": "北荒",
+    "description": "极寒冰域，苍茫的冰原荒漠，充满肃杀之气。与项羽势力相关，体现历史的厚重感。",
+    "coverImage": "/images/regions/beihuang.jpg"
+  },
+  {
+    "id": "region-tianzhuxu",
+    "name": "天柱墟",
+    "description": "隐藏于稷下地下的遗迹秘境，曾是古代战争时期用于强化战士的装置设施。高难度协作挑战区域。",
+    "coverImage": "/images/regions/tianzhuxu.jpg"
+  }
+]

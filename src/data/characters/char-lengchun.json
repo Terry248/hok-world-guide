@@ -1,0 +1,64 @@
+{
+  "id": "char-lengchun",
+  "name": "冷春",
+  "title": "血刃医者",
+  "element": "暗",
+  "weaponType": "剑",
+  "rarity": 5,
+  "role": "输出",
+  "avatar": "/images/characters/lengchun.png",
+  "stats": {
+    "hp": 13500,
+    "attack": 350,
+    "defense": 200,
+    "speed": 310,
+    "critRate": 10.0,
+    "critDamage": 55.0
+  },
+  "skills": [
+    {
+      "name": "血刃",
+      "type": "普攻",
+      "description": "发动高速打击，幻化血鞭攻击周围敌人，造成范围暗元素伤害。",
+      "multipliers": [0.7, 0.7, 1.0]
+    },
+    {
+      "name": "魔刹",
+      "type": "战技",
+      "description": "切换至魔刹形态，进入烧血爆发模式。后撤并击飞敌人，支持触发完美闪避。魔刹形态下攻击力大幅提升但持续消耗生命。",
+      "multipliers": [2.5]
+    },
+    {
+      "name": "医者仁心",
+      "type": "终结技",
+      "description": "切换回医者形态，释放大量治疗效果，为自身和周围队友回复生命值。医者形态下侧重回复和辅助。",
+      "multipliers": [0.3]
+    },
+    {
+      "name": "双形态",
+      "type": "天赋",
+      "description": "可在医者（侧重回复/辅助）与魔刹（侧重爆发/烧血）两种形态自由切换。集自奶、烧血爆发、位移、续航于一体。"
+    },
+    {
+      "name": "血色突进",
+      "type": "秘技",
+      "description": "在地图上使用时，化作血雾快速移动一段距离，可穿越敌人封锁。"
+    }
+  ],
+  "constellations": [
+    { "level": 1, "name": "血刃", "description": "血刃的伤害提升20%" },
+    { "level": 2, "name": "魔刹", "description": "魔刹形态的生命消耗降低30%" },
+    { "level": 3, "name": "医者", "description": "魔刹技能等级+3" },
+    { "level": 4, "name": "燃烧", "description": "烧血爆发模式的伤害加成提升40%" },
+    { "level": 5, "name": "仁心", "description": "终结技技能等级+3" },
+    { "level": 6, "name": "血刃医者", "description": "魔刹形态下每次攻击回复造成伤害的15%作为生命值" }
+  ],
+  "recommendedWeapons": ["wp-003", "wp-002"],
+  "recommendedTeams": [["char-huamulan", "char-wangzhaojun", "char-sunbin"], ["char-yuanliu", "char-lubanmaster", "char-xishi"]],
+  "ascensionMaterials": [
+    { "name": "暗影精华", "count": 46 },
+    { "name": "血色符文", "count": 20 },
+    { "name": "医者之心", "count": 18 }
+  ],
+  "lore": "冷春，《王者荣耀世界》原创角色。她拥有独特的医者/魔刹双形态切换机制——医者形态侧重回复和辅助，魔刹形态侧重烧血爆发。集自奶、烧血爆发、位移、续航于一体，单刷和开荒能力极强。她是游戏中唯一可在治疗和输出之间自由切换的角色。"
+}

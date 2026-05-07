@@ -1,0 +1,70 @@
+{
+  "id": "char-libai",
+  "name": "李白",
+  "title": "诗剑仙",
+  "element": "冰",
+  "weaponType": "剑",
+  "rarity": 5,
+  "role": "输出",
+  "avatar": "/images/characters/libai.png",
+  "stats": {
+    "hp": 10800,
+    "attack": 400,
+    "defense": 160,
+    "speed": 350,
+    "critRate": 18.0,
+    "critDamage": 70.0
+  },
+  "skills": [
+    {
+      "name": "侠客行",
+      "type": "普攻",
+      "description": "以剑为笔，挥毫泼墨。四段连续斩击，每次攻击附带冰元素伤害。第四段攻击会将目标冻结，是释放其他技能的前置条件。",
+      "multipliers": [0.6, 0.6, 0.8, 1.2]
+    },
+    {
+      "name": "将进酒",
+      "type": "战技",
+      "description": "化作剑气突进，对路径上敌人造成冰元素伤害。可连续释放两次，第三次释放时回到初始位置并眩晕路径上的敌人。",
+      "multipliers": [2.0, 2.0, 2.5]
+    },
+    {
+      "name": "神来之笔",
+      "type": "战技",
+      "description": "以自身为中心画出剑阵，对范围内敌人造成大量冰元素伤害。施法期间李白处于不可选中状态，免疫一切伤害和控制。",
+      "multipliers": [2.8]
+    },
+    {
+      "name": "青莲剑歌",
+      "type": "终结技",
+      "description": "化身青莲剑仙，连续释放五道剑气。每道剑气对路径上敌人造成巨额冰元素伤害，命中同一目标伤害递减。释放期间无法被选中。",
+      "multipliers": [1.8, 1.6, 1.4, 1.2, 1.0]
+    },
+    {
+      "name": "诗酒剑仙",
+      "type": "天赋",
+      "description": "普攻命中敌人4次后解锁侠客行状态，侠客行期间所有技能无法被选中。以诗入剑、以酒助剑，每一次出手都是一首绝句。"
+    },
+    {
+      "name": "醉剑",
+      "type": "秘技",
+      "description": "在地图上使用时，以醉剑步法快速穿越一段距离，途中经过的敌人受到冰元素伤害。"
+    }
+  ],
+  "constellations": [
+    { "level": 1, "name": "侠客行", "description": "侠客行状态下的技能伤害提升25%" },
+    { "level": 2, "name": "将进酒", "description": "将进酒的突进距离增加30%" },
+    { "level": 3, "name": "诗剑仙", "description": "将进酒技能等级+3" },
+    { "level": 4, "name": "神来", "description": "神来之笔的剑阵范围扩大20%" },
+    { "level": 5, "name": "青莲", "description": "终结技技能等级+3" },
+    { "level": 6, "name": "剑仙", "description": "青莲剑歌释放期间，每道剑气额外附带冰霜溅射伤害" }
+  ],
+  "recommendedWeapons": ["wp-003", "wp-009"],
+  "recommendedTeams": [["char-yuanliu", "char-sunbin", "char-wangzhaojun"], ["char-huamulan", "char-xishi", "char-dongfangyao"]],
+  "ascensionMaterials": [
+    { "name": "冰晶核", "count": 46 },
+    { "name": "诗剑残页", "count": 20 },
+    { "name": "长安酒令", "count": 18 }
+  ],
+  "lore": "李白，诗剑仙，长安区域最具代表性的剑客。在王者荣耀世界中，李白以冰元素之剑为武器，是一位高爆发、高机动性的刺客型输出角色。他的战斗风格飘逸灵动，以「侠客行」机制为核心——普攻命中4次后解锁不可选中状态，配合将进酒的三段突进和神来之笔的免伤剑阵，使他能在万军丛中取敌首级然后全身而退。青莲剑歌是他的终极技能，五道剑气连续释放，伤害惊人。他是长安风流才子的化身，以诗入剑、以酒助剑，是一位操作上限极高的角色。"
+}

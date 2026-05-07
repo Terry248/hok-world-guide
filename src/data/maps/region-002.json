@@ -1,0 +1,37 @@
+{
+  "id": "region-002",
+  "name": "三分之地",
+  "description": "大陆东南方的三国文化区域，玩家初始出生点。春溪原水网密布，通天塔直插云霄，赤壁古战场和长坂坡流传着英雄们的不朽传说。",
+  "chests": [
+    { "id": "chest-001", "type": "华丽", "location": "赤壁古战场中心祭坛，击败火焰守护者后解锁", "puzzle": "需收集散落在古战场的三面残破军旗" },
+    { "id": "chest-002", "type": "珍贵", "location": "通天塔第十层密室", "puzzle": "通过塔内九层试炼机关" },
+    { "id": "chest-003", "type": "珍贵", "location": "长坂坡古井底部暗道", "puzzle": "需在水中水位最低时进入" },
+    { "id": "chest-004", "type": "精致", "location": "春溪原中央浅滩水下沉船", "puzzle": "退潮时浅滩中央露出船骸" },
+    { "id": "chest-005", "type": "精致", "location": "考题石碑背面石龛", "puzzle": "回答三道考题石碑上的问题" },
+    { "id": "chest-006", "type": "精致", "location": "赤壁东侧废弃望楼顶层", "puzzle": "修复望楼内的机关弩" },
+    { "id": "chest-007", "type": "精致", "location": "长坂坡赵云冲锋路径尽头", "puzzle": "沿石板路上的马蹄印前进" },
+    { "id": "chest-008", "type": "精致", "location": "春溪原北侧竹林深处", "puzzle": "按竹子排列的八卦阵型行走" },
+    { "id": "chest-009", "type": "普通", "location": "春溪原南岸芦苇丛中" },
+    { "id": "chest-010", "type": "普通", "location": "通天塔底层外围石阶旁" },
+    { "id": "chest-011", "type": "普通", "location": "赤壁西侧烽火台残垣下" },
+    { "id": "chest-012", "type": "普通", "location": "长坂坡北面山坡老树根部" },
+    { "id": "chest-013", "type": "普通", "location": "考题石碑东侧小径岔路口" },
+    { "id": "chest-014", "type": "普通", "location": "春溪原东侧渡口木栈桥下" },
+    { "id": "chest-015", "type": "普通", "location": "赤壁古战场南侧营帐遗址" },
+    { "id": "chest-016", "type": "普通", "location": "长坂坡南面断崖平台" },
+    { "id": "chest-017", "type": "普通", "location": "通天塔后山采石场废料堆中" },
+    { "id": "chest-018", "type": "普通", "location": "春溪原西岸渔村废弃码头" }
+  ],
+  "waypoints": [
+    { "id": "wp-001", "name": "春溪原", "location": "春溪原中央浅滩北岸" },
+    { "id": "wp-002", "name": "通天塔", "location": "通天塔正门广场" },
+    { "id": "wp-003", "name": "赤壁", "location": "赤壁古战场东侧入口" },
+    { "id": "wp-004", "name": "长坂坡", "location": "长坂坡北面高台" },
+    { "id": "wp-005", "name": "考题石碑", "location": "春溪原西侧石碑林" }
+  ],
+  "collectibles": [
+    { "name": "三国残卷", "count": 15, "locations": ["通天塔各层书架", "赤壁古战场营帐遗址", "长坂坡古井暗道"] },
+    { "name": "古战场遗物", "count": 22, "locations": ["赤壁古战场各处散落", "长坂坡马蹄印路径旁", "春溪原水下沉船内"] },
+    { "name": "考题石碑拓片", "count": 9, "locations": ["考题石碑群各碑侧面", "通天塔底层拓印室", "春溪原北岸学者帐篷中"] }
+  ]
+}

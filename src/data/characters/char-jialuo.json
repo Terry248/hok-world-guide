@@ -1,0 +1,70 @@
+{
+  "id": "char-jialuo",
+  "name": "伽罗",
+  "title": "破魔之箭",
+  "element": "风",
+  "weaponType": "弓",
+  "rarity": 5,
+  "role": "输出",
+  "avatar": "/images/characters/jialuo.png",
+  "stats": {
+    "hp": 9200,
+    "attack": 390,
+    "defense": 130,
+    "speed": 340,
+    "critRate": 15.0,
+    "critDamage": 65.0
+  },
+  "skills": [
+    {
+      "name": "破魔之箭",
+      "type": "普攻",
+      "description": "连续射击，长弓/短弓双形态切换。长弓状态下普攻间隔随攻击次数递减，攻速不断提升。所有普攻和技能伤害优先对目标护盾造成等额伤害，破盾能力强。",
+      "multipliers": [0.6, 0.6, 0.6, 0.9]
+    },
+    {
+      "name": "一技能·形态切换",
+      "type": "战技",
+      "description": "长弓/短弓自由切换。长弓模式下射程大幅提升但攻速降低，短弓模式下攻速加快但射程缩短。进入精准射击状态可蓄力造成更高伤害。",
+      "multipliers": [1.5]
+    },
+    {
+      "name": "二技能·静默之箭",
+      "type": "战技",
+      "description": "射出箭矢对路径上敌人造成风元素伤害并将其击退/击飞。命中后强化下一次普攻。完美闪避后同样强化下一次普攻。",
+      "multipliers": [2.2]
+    },
+    {
+      "name": "三技能·守界领域",
+      "type": "终结技",
+      "description": "展开领域，增强攻击能力。施放瞬间对范围内全体敌人造成击飞，使自身进入领域中心获得暴击率加成。在领域内射程和暴击率持续提升。",
+      "multipliers": [1.5]
+    },
+    {
+      "name": "破盾",
+      "type": "天赋",
+      "description": "所有伤害优先对目标护盾造成等额伤害，对带盾敌人具有极强克制作用。普攻强化+远程输出是核心战斗特色。"
+    },
+    {
+      "name": "远望",
+      "type": "秘技",
+      "description": "在地图上使用时，大幅提升视野范围，可观察远处的地形和敌人。"
+    }
+  ],
+  "constellations": [
+    { "level": 1, "name": "破魔", "description": "静默之箭的伤害提升20%" },
+    { "level": 2, "name": "长弓", "description": "长弓状态下的攻速加成提升30%" },
+    { "level": 3, "name": "静默", "description": "静默之箭技能等级+3" },
+    { "level": 4, "name": "领域", "description": "守界领域的暴击率加成提升10%" },
+    { "level": 5, "name": "守界", "description": "终结技技能等级+3" },
+    { "level": 6, "name": "无界", "description": "守界领域持续期间，伽罗的普攻可穿透目标" }
+  ],
+  "recommendedWeapons": ["wp-005", "wp-003"],
+  "recommendedTeams": [["char-wangzhaojun", "char-sunbin", "char-yuanliu"], ["char-lubanmaster", "char-xishi", "char-huamulan"]],
+  "ascensionMaterials": [
+    { "name": "风灵之花", "count": 46 },
+    { "name": "破魔箭矢", "count": 20 },
+    { "name": "守护者之证", "count": 18 }
+  ],
+  "lore": "伽罗，破魔之箭的继承者。在王者荣耀世界中，伽罗定位为强攻类远程输出位，射程优势明显。她拥有独特的长弓/短弓双形态切换机制，所有伤害优先对目标护盾造成等额伤害，对带盾敌人具有极强克制。守界领域是她的核心战术技能，能提供大范围控制和暴击增益。作为战令角色，她是输出主C和远程消耗型射手的典范。"
+}

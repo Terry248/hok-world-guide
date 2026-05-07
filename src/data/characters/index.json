@@ -1,0 +1,172 @@
+[
+  {
+    "id": "char-yuanliu",
+    "name": "元流之子",
+    "title": "源流之子",
+    "element": "光",
+    "weaponType": "剑",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/yuanliu.png"
+  },
+  {
+    "id": "char-dongfangyao",
+    "name": "东方曜",
+    "title": "星之队长",
+    "element": "雷",
+    "weaponType": "剑",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/dongfang-yao.png"
+  },
+  {
+    "id": "char-xishi",
+    "name": "西施",
+    "title": "星之队宝藏少女",
+    "element": "草",
+    "weaponType": "法杖",
+    "rarity": 5,
+    "role": "辅助",
+    "avatar": "/images/characters/xishi.png"
+  },
+  {
+    "id": "char-mengya",
+    "name": "蒙犽",
+    "title": "火力全开",
+    "element": "火",
+    "weaponType": "弓",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/meng-ya.png"
+  },
+  {
+    "id": "char-lubanmaster",
+    "name": "鲁班大师",
+    "title": "神匠",
+    "element": "雷",
+    "weaponType": "锤",
+    "rarity": 5,
+    "role": "辅助",
+    "avatar": "/images/characters/luban-master.png"
+  },
+  {
+    "id": "char-sunbin",
+    "name": "孙膑",
+    "title": "时光守护者",
+    "element": "风",
+    "weaponType": "法杖",
+    "rarity": 5,
+    "role": "辅助",
+    "avatar": "/images/characters/sunbin.png"
+  },
+  {
+    "id": "char-wangzhaojun",
+    "name": "王昭君",
+    "title": "冰霜掌控者",
+    "element": "冰",
+    "weaponType": "法杖",
+    "rarity": 5,
+    "role": "控制",
+    "avatar": "/images/characters/wang-zhaojun.png"
+  },
+  {
+    "id": "char-jialuo",
+    "name": "伽罗",
+    "title": "破魔之箭",
+    "element": "风",
+    "weaponType": "弓",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/jialuo.png"
+  },
+  {
+    "id": "char-huamulan",
+    "name": "花木兰",
+    "title": "无双剑士",
+    "element": "火",
+    "weaponType": "剑",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/huamulan.png"
+  },
+  {
+    "id": "char-kai",
+    "name": "铠",
+    "title": "青龙志",
+    "element": "冰",
+    "weaponType": "剑",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/kai.png"
+  },
+  {
+    "id": "char-lengchun",
+    "name": "冷春",
+    "title": "血刃医者",
+    "element": "暗",
+    "weaponType": "剑",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/lengchun.png"
+  },
+  {
+    "id": "char-libai",
+    "name": "李白",
+    "title": "诗剑仙",
+    "element": "冰",
+    "weaponType": "剑",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/libai.png"
+  },
+  {
+    "id": "char-direnjie",
+    "name": "狄仁杰",
+    "title": "长安治安官",
+    "element": "雷",
+    "weaponType": "轮",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/direnjie.png"
+  },
+  {
+    "id": "char-wuzetian",
+    "name": "武则天",
+    "title": "女帝",
+    "element": "光",
+    "weaponType": "法杖",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/wuzetian.png"
+  },
+  {
+    "id": "char-zhaoyun",
+    "name": "赵云",
+    "title": "常山赵子龙",
+    "element": "雷",
+    "weaponType": "枪",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/zhaoyun.png"
+  },
+  {
+    "id": "char-lan",
+    "name": "澜",
+    "title": "鲨猎",
+    "element": "暗",
+    "weaponType": "双刀",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/lan.png"
+  },
+  {
+    "id": "char-daji",
+    "name": "妲己",
+    "title": "魅惑妖狐",
+    "element": "暗",
+    "weaponType": "法杖",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/daji.png"
+  }
+]
