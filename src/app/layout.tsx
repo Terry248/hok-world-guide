@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Noto_Sans_SC } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { AdSidebar } from "@/components/layout/ad-sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${notoSansSC.variable} font-sans min-h-screen flex flex-col`}
       >
         <Header />
+        <AdSidebar />
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8">
           {children}
         </main>
