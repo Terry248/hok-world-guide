@@ -1,5 +1,5 @@
 import { getCombatGuides } from '@/lib/guides';
-import { GuideList } from '@/components/guides/guide-list';
+import { GuideListClient } from '@/components/guides/guide-list-client';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Swords } from 'lucide-react';
 
@@ -19,13 +19,13 @@ export default function CombatPage() {
         }}
       />
       <div className="relative z-10">
-      <div className="mb-8">
-        <SectionHeading title="战斗攻略" icon={<Swords className="w-6 h-6" />} />
-        <p className="text-text-muted mt-2">
-          Boss打法、副本通关技巧、阵容搭配攻略
-        </p>
-      </div>
-      <GuideList guides={guides} type="combat" />
+        <div className="mb-8">
+          <SectionHeading title="战斗攻略" icon={<Swords className="w-6 h-6" />} />
+          <p className="text-text-muted mt-2">
+            元素反应机制、角色培养、Boss打法与阵容搭配攻略
+          </p>
+        </div>
+        <GuideListClient guides={guides} type="combat" />
       </div>
     </div>
   );
