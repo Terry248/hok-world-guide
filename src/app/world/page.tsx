@@ -126,12 +126,15 @@ export default function WorldPage() {
                     href={`/characters/${char.id}`}
                     className="group bg-card rounded-xl border border-border overflow-hidden hover:border-primary/50 transition-all"
                   >
-                    <div className="relative h-28 bg-gradient-to-br from-background to-card">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-5xl opacity-15 group-hover:opacity-25 transition-opacity">{char.emoji}</span>
-                      </div>
+                    <div className="relative h-40 overflow-hidden">
+                      <img
+                        src={char.image}
+                        alt={char.name}
+                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                       {origin && (
-                        <div className="absolute top-2 right-2 text-xs px-2 py-0.5 rounded-full bg-primary/20 text-primary border border-primary/30">
+                        <div className="absolute top-2 right-2 text-xs px-2 py-0.5 rounded-full bg-primary/80 text-primary-foreground border border-primary/30">
                           {origin.region} · {origin.city}
                         </div>
                       )}
@@ -203,15 +206,15 @@ export default function WorldPage() {
 }
 
 const worldCharacters = [
-  { id: 'char-yuanliu', name: '元流之子', title: '原初之流 · 主角', emoji: '✨' },
-  { id: 'char-dongfangyao', name: '东方曜', title: '星辰之子 · 雷元素主C', emoji: '⚡' },
-  { id: 'char-xishi', name: '西施', title: '幻纱之灵 · 草元素辅助', emoji: '🌿' },
-  { id: 'char-sunbin', name: '孙膑', title: '逆流之时 · 风元素辅助', emoji: '⏳' },
-  { id: 'char-mengya', name: '蒙犽', title: '烈炮小子 · 火元素输出', emoji: '🔥' },
-  { id: 'char-lubandashi', name: '鲁班大师', title: '神匠 · 岩元素辅助', emoji: '🔧' },
-  { id: 'char-lengchun', name: '冷春', title: '绯瞳刃舞 · 冰元素输出', emoji: '❄️' },
-  { id: 'char-huamulan', name: '花木兰', title: '传说之刃 · 火元素主C', emoji: '⚔️' },
-  { id: 'char-kai', name: '铠', title: '破灭刃锋 · 暗元素主C', emoji: '🛡️' },
-  { id: 'char-wangzhaojun', name: '王昭君', title: '冰雪之华 · 冰元素辅助', emoji: '🧊' },
-  { id: 'char-jialuo', name: '伽罗', title: '破魔之箭 · 光元素输出', emoji: '🏹' },
+  { id: 'char-yuanliu', name: '元流之子', title: '原初之流 · 主角', image: '/images/characters/yuanliu.jpg' },
+  { id: 'char-dongfangyao', name: '东方曜', title: '星辰之子 · 雷元素主C', image: '/images/characters/dongfang-yao.jpg' },
+  { id: 'char-xishi', name: '西施', title: '幻纱之灵 · 草元素辅助', image: '/images/characters/xishi.jpg' },
+  { id: 'char-sunbin', name: '孙膑', title: '逆流之时 · 风元素辅助', image: '/images/characters/sunbin.jpg' },
+  { id: 'char-mengya', name: '蒙犽', title: '烈炮小子 · 火元素输出', image: '/images/characters/meng-ya.jpg' },
+  { id: 'char-lubandashi', name: '鲁班大师', title: '神匠 · 岩元素辅助', image: '/images/characters/luban-master.jpg' },
+  { id: 'char-lengchun', name: '冷春', title: '绯瞳刃舞 · 冰元素输出', image: '/images/characters/lengchun.jpg' },
+  { id: 'char-huamulan', name: '花木兰', title: '传说之刃 · 火元素主C', image: '/images/characters/huamulan.jpg' },
+  { id: 'char-kai', name: '铠', title: '破灭刃锋 · 暗元素主C', image: '/images/characters/kai.jpg' },
+  { id: 'char-wangzhaojun', name: '王昭君', title: '冰雪之华 · 冰元素辅助', image: '/images/characters/wang-zhaojun.jpg' },
+  { id: 'char-jialuo', name: '伽罗', title: '破魔之箭 · 光元素输出', image: '/images/characters/jialuo.jpg' },
 ];
