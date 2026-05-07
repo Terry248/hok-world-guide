@@ -1,0 +1,398 @@
+{
+  "name": "王者大陆",
+  "description": "探索王者大陆的每一寸土地，挖掘埋藏在历史长河中的英雄事迹与文明遗迹。",
+  "mapUrl": "https://pvp.qq.com/act/a20260320map/index.html",
+  "regions": [
+    {
+      "id": "yunzhong",
+      "name": "云中漠地",
+      "icon": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230607/16861221648873.png",
+      "description": "昔日的云中古国，神陨之战后沦为四方封闭的荒漠。玉石资源丰富，沙暴肆虐，大小船帮崛起。",
+      "position": "大陆西北",
+      "cities": [
+        {
+          "name": "玉城",
+          "subtitle": "玉之温室，幻想之城",
+          "description": "一座因玉而兴盛的城市，是盛放于沙漠中的绝美之花。得益于玉石资源和玉结界的庇护，成为云中漠地多年来唯一免遭战乱的城市。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865616146124.jpg",
+          "heroes": [{"id": "542", "name": "暃", "title": "灵玉之子"}]
+        },
+        {
+          "name": "金庭城",
+          "description": "云中漠地最发达的城市，国王追求无上力量导致魔道外泄，国家沦为荒漠。王子成为潜行于黑暗的死神。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260320/17739773464457.png",
+          "heroes": [{"id": "153", "name": "兰陵王", "title": "暗影刀锋"}]
+        },
+        {
+          "name": "千窟城",
+          "subtitle": "文明为火，千窟为佑",
+          "description": "传承知识和收藏文明的学者之城，云中的知识圣地。学者们为躲避战乱在山壁上凿刻石窟安放典籍。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865617683325.jpg",
+          "heroes": [{"id": "508", "name": "伽罗", "title": "破魔之箭"}]
+        },
+        {
+          "name": "鸣沙遗址",
+          "description": "鸣沙子民跟随萤火虫找到传说中的桃源——鸣沙之谷，世代定居于此。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865618149461.jpg",
+          "heroes": [{"id": "534", "name": "桑启", "title": "萤火之旅"}]
+        },
+        {
+          "name": "沙海",
+          "subtitle": "蛮荒之漠 希望永存",
+          "description": "独立于城邦之外的自由之地，大大小小的船帮崛起。沙民们信仰会有一位真王指引沙漠走出厄运。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865618915102.jpg",
+          "heroes": [{"id": "548", "name": "戈娅", "title": "沙海飞舟"}, {"id": "521", "name": "海月", "title": "永夜之心"}]
+        }
+      ],
+      "miracle": {
+        "name": "王者峡谷",
+        "description": "险峻的高原地带，连接东方与西方大陆的必经之路。作为被反复争夺的兵家之地，以机关术修建了坚实的要塞。",
+        "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230703/16883514254001.jpg"
+      }
+    },
+    {
+      "id": "heluo",
+      "name": "河洛",
+      "icon": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230608/16861964161986.png",
+      "description": "王者大陆的中部，富饶平原蔓延，诞生了最为强盛和繁华的长安城。",
+      "position": "大陆中部",
+      "cities": [
+        {
+          "name": "长安城",
+          "subtitle": "盛世传说，不朽之章",
+          "description": "王者大陆第一强国，奠基于神秘的万象天工之上。在武氏统治下，长安再度成为熙攘繁盛、万邦来朝的繁华之都。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865620792722.jpg",
+          "heroes": [
+            {"id": "133", "name": "狄仁杰", "title": "断案大师"},
+            {"id": "136", "name": "武则天", "title": "女帝"},
+            {"id": "131", "name": "李白", "title": "青莲剑仙"},
+            {"id": "513", "name": "上官婉儿", "title": "惊鸿之笔"},
+            {"id": "538", "name": "云缨", "title": "燎原之心"},
+            {"id": "176", "name": "杨玉环", "title": "霓裳风华"},
+            {"id": "199", "name": "公孙离", "title": "幻舞玲珑"}
+          ]
+        },
+        {
+          "name": "长城",
+          "subtitle": "长城之畔，是故乡",
+          "description": "太古时期留下的奇迹之一，隔开了大漠和帝国。千百年来静静矗立，一边是灼热大漠，一边是繁荣国土。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865621131033.jpg",
+          "heroes": [
+            {"id": "154", "name": "花木兰", "title": "传说之刃"},
+            {"id": "193", "name": "铠", "title": "破灭刃锋"},
+            {"id": "196", "name": "百里守约", "title": "静谧之眼"},
+            {"id": "195", "name": "百里玄策", "title": "嚣狂之镰"},
+            {"id": "194", "name": "苏烈", "title": "不屈铁壁"},
+            {"id": "507", "name": "李信", "title": "谋世之战"}
+          ]
+        }
+      ],
+      "miracle": {
+        "name": "万象天工",
+        "description": "十二奇迹之中有着至高运算能力的智能中枢。万象天工延展出无数经络联通坊市，构筑了庞大的长安城。",
+        "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260311/17732178764021.jpg"
+      }
+    },
+    {
+      "id": "dajiang",
+      "name": "大河流域",
+      "icon": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230609/16863032479251.png",
+      "description": "大陆上水资源最为充沛而丰富的地方，大河流域、湖泊群、潺湲溪流交织的中心。",
+      "position": "大陆东部",
+      "cities": [
+        {
+          "name": "云梦泽",
+          "description": "阴阳家是此地最高的主宰，擅于魔道之术，沉迷于对知识本源的探索。由信仰、自然和魔道支撑的统治出现了瓦解的迹象。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865627652133.jpg",
+          "heroes": [
+            {"id": "182", "name": "干将莫邪", "title": "淬命双剑"},
+            {"id": "187", "name": "东皇太一", "title": "噬灭日蚀"},
+            {"id": "189", "name": "鬼谷子", "title": "万物有灵"},
+            {"id": "506", "name": "云中君", "title": "流云之翼"},
+            {"id": "505", "name": "瑶", "title": "鹿灵守心"}
+          ]
+        },
+        {
+          "name": "灞城",
+          "description": "敬请期待",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260320/17739773947007.png",
+          "heroes": [{"id": "149", "name": "刘邦", "title": "双面君主"}, {"id": "150", "name": "韩信", "title": "国士无双"}, {"id": "156", "name": "张良", "title": "言灵之书"}]
+        },
+        {
+          "name": "鸿门",
+          "description": "敬请期待",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260320/17739774138251.png",
+          "heroes": [{"id": "135", "name": "项羽", "title": "霸王"}, {"id": "174", "name": "虞姬", "title": "森之风灵"}]
+        }
+      ],
+      "miracle": {
+        "name": "天生木",
+        "description": "神陨之战后，女娲以最后的能量复苏了天生木，使之独木成林，孕育出以巨树为核心的独特区域风貌。",
+        "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260312/17733013539533.jpg"
+      }
+    },
+    {
+      "id": "beihuang",
+      "name": "北荒",
+      "icon": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230608/16861961187351.png",
+      "description": "王者大陆的最北端，大部分时间寒冷统治土地。昔日太古时代大迁徙子民的后裔生活于此。",
+      "position": "大陆北部",
+      "cities": [
+        {
+          "name": "狼旗",
+          "description": "一望无际的草原，生活着昔日太古时代大迁徙子民的后裔。他们信仰苍狼图腾，坚信会出现领袖带领统一北地。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865620341547.jpg",
+          "heroes": [
+            {"id": "152", "name": "王昭君", "title": "冰雪之华"},
+            {"id": "177", "name": "苍", "title": "苍狼末裔"}
+          ]
+        },
+        {
+          "name": "日之塔",
+          "description": "敬请期待",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260324/17743222521582.png",
+          "heroes": [
+            {"id": "167", "name": "孙悟空", "title": "齐天大圣"},
+            {"id": "168", "name": "牛魔", "title": "精英酋长"},
+            {"id": "169", "name": "后羿", "title": "半神之弓"},
+            {"id": "511", "name": "猪八戒", "title": "无忧猛士"},
+            {"id": "515", "name": "嫦娥", "title": "寒月公主"}
+          ]
+        }
+      ],
+      "miracle": {
+        "name": "日之塔",
+        "description": "神明曾在此修建光辉璀璨的日之塔以汲取能源。日之塔被摧毁后，漫天尘埃遮蔽阳光，此地沦为极寒之地。",
+        "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260312/17733008985985.jpg"
+      }
+    },
+    {
+      "id": "riluohai",
+      "name": "日落海",
+      "icon": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230607/16861221793911.png",
+      "description": "向神祇效忠的阿尔卡纳家族依托奇迹能源和秘术科技打造了日落海最繁华的海港之城。",
+      "position": "大陆西部",
+      "cities": [
+        {
+          "name": "海都",
+          "subtitle": "以奇迹始，以诅咒终",
+          "description": "反叛的十一个阿尔卡纳家族依托奇迹能源和阿科米亚秘术科技造就了强大海军，打造了整个日落海最繁华的海港之城。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230626/16877471328234.jpg",
+          "heroes": [
+            {"id": "132", "name": "马可波罗", "title": "远游之枪"},
+            {"id": "146", "name": "露娜", "title": "月光之女"},
+            {"id": "503", "name": "狂铁", "title": "战车意志"},
+            {"id": "504", "name": "米莱狄", "title": "筑城者"},
+            {"id": "545", "name": "莱西奥", "title": "火鹰船长"}
+          ]
+        },
+        {
+          "name": "日落圣殿",
+          "description": "西方的先祖们踏上的第一块土地，由圣骑士们守护，崇尚英勇、荣耀与美德。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260320/17739773098101.png",
+          "heroes": [
+            {"id": "142", "name": "安琪拉", "title": "暗夜萝莉"},
+            {"id": "166", "name": "亚瑟", "title": "圣骑之力"},
+            {"id": "183", "name": "雅典娜", "title": "圣域余晖"},
+            {"id": "155", "name": "艾琳", "title": "精灵之舞"},
+            {"id": "536", "name": "夏洛特", "title": "玫瑰剑士"}
+          ]
+        }
+      ],
+      "miracle": null
+    },
+    {
+      "id": "sanfen",
+      "name": "三分之地",
+      "icon": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230608/16862096484653.png",
+      "description": "益城、魏都、江郡三足鼎立，英雄辈出，机关术与武道在此碰撞。",
+      "position": "大陆中南部",
+      "cities": [
+        {
+          "name": "益城",
+          "subtitle": "桃枝誓义盟，任侠济山河",
+          "description": "稀有的矿藏和丰富的木材资源使这里成为机关术的天堂。工坊林立，机关造物深入到人们的生活中。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865622205239.jpg",
+          "heroes": [
+            {"id": "107", "name": "赵云", "title": "苍天翔龙"},
+            {"id": "114", "name": "刘禅", "title": "暴走机关"},
+            {"id": "125", "name": "元歌", "title": "无间傀儡"},
+            {"id": "170", "name": "刘备", "title": "仁德义枪"},
+            {"id": "171", "name": "张飞", "title": "禁血狂兽"},
+            {"id": "190", "name": "诸葛亮", "title": "绝代智谋"},
+            {"id": "192", "name": "黄忠", "title": "燃魂重炮"},
+            {"id": "518", "name": "马超", "title": "冷晖之枪"},
+            {"id": "533", "name": "阿古朵", "title": "山林之子"},
+            {"id": "564", "name": "姬小满", "title": "武道奇才"}
+          ]
+        },
+        {
+          "name": "江郡",
+          "subtitle": "云雾散尽日，长帆济海时",
+          "description": "邻近东南沿海，船运和港口都十分发达。依靠大河作为天堑，几乎不曾受到战乱影响。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865622441397.jpg",
+          "heroes": [
+            {"id": "106", "name": "小乔", "title": "恋之微风"},
+            {"id": "111", "name": "孙尚香", "title": "千金重弩"},
+            {"id": "124", "name": "周瑜", "title": "铁血都督"},
+            {"id": "191", "name": "大乔", "title": "沧海之曜"},
+            {"id": "510", "name": "孙策", "title": "光明之海"},
+            {"id": "528", "name": "澜", "title": "鲨之猎刃"},
+            {"id": "184", "name": "蔡文姬", "title": "天籁弦音"},
+            {"id": "151", "name": "孙权", "title": "定旌之谋"}
+          ]
+        },
+        {
+          "name": "魏都",
+          "subtitle": "风沙铸铁血，霸道即行路",
+          "description": "富庶的中原地带，地处枢纽。大大小小十余座城市，城墙坚固度与彪悍铁骑都是三国之首。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865622759304.jpg",
+          "heroes": [
+            {"id": "126", "name": "夏侯惇", "title": "不羁之风"},
+            {"id": "127", "name": "甄姬", "title": "洛神降临"},
+            {"id": "128", "name": "曹操", "title": "鲜血枭雄"},
+            {"id": "129", "name": "典韦", "title": "狂战士"},
+            {"id": "137", "name": "司马懿", "title": "寂灭之心"},
+            {"id": "123", "name": "吕布", "title": "无双之魔"},
+            {"id": "141", "name": "貂蝉", "title": "绝世舞姬"}
+          ]
+        }
+      ],
+      "miracle": {
+        "name": "东风祭坛",
+        "description": "十二奇迹之一，能操控一方天象水势。上古时期曾被神明用以镇压魔种起义的首领孙悟空。",
+        "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260311/17732179724936.jpg"
+      }
+    },
+    {
+      "id": "jianmu",
+      "name": "建木",
+      "icon": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865369831738.png",
+      "description": "传说中的神明居所，频繁发生地动和天灾。残留着许多方舟文明遗迹，栖息着大型魔种。",
+      "position": "大陆东部偏北",
+      "cities": [
+        {
+          "name": "倒悬天",
+          "description": "传说中的神明居所，并以此为中心诞生了文明。残留着许多方舟文明遗迹，还栖息着大型魔种。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260312/17733016968755.png",
+          "heroes": [
+            {"id": "179", "name": "女娲", "title": "至高创世"},
+            {"id": "178", "name": "杨戬", "title": "根源之目"},
+            {"id": "148", "name": "姜子牙", "title": "封神者"},
+            {"id": "198", "name": "梦奇", "title": "入梦之灵"},
+            {"id": "529", "name": "盘古", "title": "破晓之神"}
+          ]
+        },
+        {
+          "name": "天驻原",
+          "description": "不周坊坠落后，归山一族认为上天恩泽在此驻足。随着紊流灾害频发，他们修筑地上天梯希望登上空岛。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260312/17732845476800.jpg",
+          "heroes": [
+            {"id": "188", "name": "大禹", "title": "鼎镇山河"},
+            {"id": "109", "name": "妲己", "title": "魅力之狐"},
+            {"id": "180", "name": "哪吒", "title": "桀骜炎枪"},
+            {"id": "186", "name": "太乙真人", "title": "炼金大师"},
+            {"id": "172", "name": "蚩奼", "title": "五兵之主"}
+          ]
+        }
+      ],
+      "miracle": {
+        "name": "十方天枢",
+        "description": "具有超远距离传送能力的空间奇迹。通过十方天枢可瞬间穿越空间抵达王者大陆任何位置。",
+        "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260312/17733018826289.png"
+      }
+    },
+    {
+      "id": "zhulu",
+      "name": "逐鹿",
+      "icon": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230609/16863045448836.png",
+      "description": "王者荣耀世界的核心舞台。稷下学院坐落于此，由墨子大师的机关和庄周的梦境所守护。",
+      "position": "大陆东北部",
+      "isGameWorld": true,
+      "gameWorldNote": "《王者荣耀世界》当前可探索的主要区域，包含稷下学院及周边地区。",
+      "cities": [
+        {
+          "name": "稷下学院",
+          "subtitle": "自己告诉自己真理",
+          "description": "稷下三贤者为了传承文明开设的学院，建造于废都朝歌之畔。成立以来培养了大批精英和学子。无论天才智者、精英世家、魔种混血儿或贫贱之民，入学都能得到公正的教诲。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260312/17732851659970.jpg",
+          "heroes": [
+            {"id": "108", "name": "墨子", "title": "和平守望"},
+            {"id": "113", "name": "庄周", "title": "逍遥幻梦"},
+            {"id": "139", "name": "老夫子", "title": "万古长明"},
+            {"id": "105", "name": "廉颇", "title": "正义爆轰"},
+            {"id": "117", "name": "钟无艳", "title": "野蛮之锤"},
+            {"id": "118", "name": "孙膑", "title": "逆流之时"},
+            {"id": "522", "name": "曜", "title": "星辰之子"},
+            {"id": "523", "name": "西施", "title": "幻纱之灵"},
+            {"id": "524", "name": "蒙犽", "title": "烈炮小子"},
+            {"id": "525", "name": "鲁班大师", "title": "神匠"},
+            {"id": "581", "name": "元流之子", "title": "原初之流"}
+          ]
+        },
+        {
+          "name": "玄雍城",
+          "subtitle": "锤炼强者之炉",
+          "description": "没有矿藏，缺乏沃土，却盛产战士。无论出身贵贱，从小就接受严格训练，以夺取军功为目标战斗。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865628045629.jpg",
+          "heroes": [
+            {"id": "110", "name": "嬴政", "title": "王者独尊"},
+            {"id": "112", "name": "鲁班七号", "title": "机关造物"},
+            {"id": "119", "name": "扁鹊", "title": "善恶怪医"},
+            {"id": "120", "name": "白起", "title": "最终兵器"},
+            {"id": "121", "name": "芈月", "title": "永恒之月"},
+            {"id": "531", "name": "镜", "title": "破镜之刃"},
+            {"id": "527", "name": "蒙恬", "title": "秩序统将"}
+          ]
+        },
+        {
+          "name": "南荒",
+          "description": "敬请期待",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260320/17739774523951.png",
+          "heroes": [
+            {"id": "115", "name": "高渐离", "title": "叛逆吟游"},
+            {"id": "116", "name": "阿轲", "title": "信念之刃"}
+          ]
+        }
+      ],
+      "miracle": {
+        "name": "云蚕",
+        "description": "位于稷下的奇迹，核心名为云蚕。云蚕吐纳飘渺云流凝作云丝，三贤以云丝为经纬编织出举世闻名的稷下学院。",
+        "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20260312/17732848914674.jpg"
+      }
+    },
+    {
+      "id": "fusang",
+      "name": "扶桑",
+      "icon": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865372871543.png",
+      "description": "大陆东面最大的岛屿，生活着异民族。习俗和文化受到大陆深远影响。一场瘟疫令其元气大伤。",
+      "position": "大陆东海外",
+      "cities": [
+        {
+          "name": "扶桑",
+          "description": "大陆东面最大的岛屿，生活着异民族。学子和僧侣曾远道前往稷下和长安求学。一场瘟疫令其元气大伤。",
+          "image": "https://game.gtimg.cn/images/yxzj/zlkdatasys/images/image/20230612/16865629822154.jpg",
+          "heroes": [
+            {"id": "130", "name": "宫本武藏", "title": "剑圣"},
+            {"id": "157", "name": "不知火舞", "title": "明媚烈焰"},
+            {"id": "162", "name": "娜可露露", "title": "鹰之守护"},
+            {"id": "163", "name": "橘右京", "title": "神梦一刀"}
+          ]
+        }
+      ],
+      "miracle": null
+    }
+  ],
+  "miracles": [
+    {"name": "王者峡谷", "region": "云中漠地", "desc": "连接东西方大陆的必经之路"},
+    {"name": "万象天工", "region": "河洛", "desc": "至高运算能力的智能中枢"},
+    {"name": "天生木", "region": "大河流域", "desc": "女娲复苏的独木成林奇迹"},
+    {"name": "日之塔", "region": "北荒", "desc": "神明修建的光辉能源塔"},
+    {"name": "东风祭坛", "region": "三分之地", "desc": "操控天象水势的奇迹"},
+    {"name": "十方天枢", "region": "建木", "desc": "超远距离传送的空间奇迹"},
+    {"name": "云蚕", "region": "逐鹿", "desc": "吐纳云流编织稷下学院的奇迹"},
+    {"name": "天燧洪炉", "region": "", "desc": "锻造神兵的奇迹"},
+    {"name": "碧海之眼", "region": "", "desc": "深海的奇迹"},
+    {"name": "无尽书库", "region": "", "desc": "收录世间一切知识的奇迹"}
+  ]
+}

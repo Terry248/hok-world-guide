@@ -33,6 +33,7 @@ export const SITE_CONFIG = {
     { label: '角色图鉴', href: '/characters' },
     { label: '武器大全', href: '/weapons' },
     { label: '地图探索', href: '/maps' },
+    { label: '世界观', href: '/world' },
     { label: '任务攻略', href: '/quests' },
     { label: '战斗攻略', href: '/combat' },
     { label: '配队模拟', href: '/builder' },

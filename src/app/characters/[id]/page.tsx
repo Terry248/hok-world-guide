@@ -1,4 +1,5 @@
 import { getCharacterById, getCharacterIds, getAllCharacters } from '@/lib/characters';
+import { getCharacterOrigin } from '@/lib/world';
 import { notFound } from 'next/navigation';
 import { CharacterDetailHeader } from '@/components/characters/character-detail-header';
 import { SkillList } from '@/components/characters/skill-list';
@@ -6,7 +7,7 @@ import { ConstellationList } from '@/components/characters/constellation-list';
 import { BuildRecommendation } from '@/components/characters/build-recommendation';
 import { MarkdownRenderer } from '@/components/guides/markdown-renderer';
 import { SectionHeading } from '@/components/shared/section-heading';
-import { ScrollText } from 'lucide-react';
+import { ScrollText, MapPin } from 'lucide-react';
 
 export async function generateStaticParams() {
   return getCharacterIds().map(id => ({ id }));
@@ -48,6 +49,29 @@ export default async function CharacterDetailPage({ params }: { params: Promise<
         <SkillList skills={hero.skills} />
         <ConstellationList constellations={hero.constellations} />
         <BuildRecommendation character={hero} allCharacters={allChars} />
+
+        {/* 出身地 */}
+        {(() => {
+          const origin = getCharacterOrigin(hero.name);
+          if (!origin) return null;
+          return (
+            <section className="mt-8">
+              <div className="bg-card rounded-lg border border-border p-4 flex items-center gap-3">
+                <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
+                <div className="text-sm">
+                  <span className="text-text-muted">王者大陆出身地：</span>
+                  <span className="font-medium">{origin.region} · {origin.city}</span>
+                  <a
+                    href="/world"
+                    className="ml-2 text-xs text-primary hover:text-primary-hover"
+                  >
+                    查看世界观地图 →
+                  </a>
+                </div>
+              </div>
+            </section>
+          );
+        })()}
 
         <section className="mt-8">
           <SectionHeading title="背景故事" icon={<ScrollText className="w-5 h-5" />} />

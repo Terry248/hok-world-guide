@@ -6,7 +6,7 @@ import { CharacterCard } from '@/components/characters/character-card';
 import { GuideCard } from '@/components/guides/guide-card';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { SearchAutocomplete } from '@/components/search/search-autocomplete';
-import { Sword, BookOpen, Map, Users, Shield, Compass } from 'lucide-react';
+import { Sword, BookOpen, Map, Users, Shield, Compass, Globe } from 'lucide-react';
 
 export default function HomePage() {
   const heroes = getFeaturedCharacters(6);
@@ -43,12 +43,13 @@ export default function HomePage() {
       </section>
 
       {/* Quick Links */}
-      <section className="grid grid-cols-2 md:grid-cols-5 gap-4">
+      <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         <QuickLink href="/characters" icon={<Sword />} label="角色图鉴" desc="全角色详细信息" />
         <QuickLink href="/weapons" icon={<Shield />} label="武器大全" desc="装备属性大全" />
         <QuickLink href="/maps" icon={<Map />} label="地图探索" desc="宝箱/收集品路线" />
         <QuickLink href="/builder" icon={<Users />} label="配队模拟" desc="队伍搭配模拟器" />
         <QuickLink href="/beginner" icon={<Compass />} label="新手指南" desc="快速入门攻略" />
+        <QuickLink href="/world" icon={<Globe />} label="世界观" desc="王者大陆全览" />
       </section>
 
       {/* Featured Heroes */}
