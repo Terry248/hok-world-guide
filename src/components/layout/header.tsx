@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Sword, Menu, X } from 'lucide-react';
+import { Sword, Search, Menu, X } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { MobileNav } from './mobile-nav';
 
@@ -25,6 +25,13 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href="/search"
+              className="ml-2 p-2 rounded-md text-text-muted hover:text-foreground hover:bg-card-hover transition-colors"
+              title="全站搜索"
+            >
+              <Search className="w-4 h-4" />
+            </Link>
           </nav>
 
           {/* Mobile Nav Toggle */}

@@ -5,7 +5,7 @@ import { getAllRegions } from '@/lib/maps';
 import { CharacterCard } from '@/components/characters/character-card';
 import { GuideCard } from '@/components/guides/guide-card';
 import { SectionHeading } from '@/components/shared/section-heading';
-import { SearchInput } from '@/components/shared/search-input';
+import { SearchAutocomplete } from '@/components/search/search-autocomplete';
 import { Sword, BookOpen, Map, Users, Shield, Compass } from 'lucide-react';
 
 export default function HomePage() {
@@ -38,7 +38,7 @@ export default function HomePage() {
           最全角色图鉴、武器大全、地图探索点位、任务流程攻略、配队模拟器
         </p>
         <div className="max-w-md mx-auto">
-          <SearchInput placeholder="搜索英雄、武器、攻略..." />
+          <SearchAutocomplete placeholder="搜索英雄、武器、攻略..." size="lg" />
         </div>
       </section>
 
