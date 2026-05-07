@@ -1,0 +1,52 @@
+{
+  "id": "region-jixia",
+  "name": "稷下群山",
+  "description": "稷下学院传奇求学圣地，三大学院环通天塔而建。学风浓郁，百态鲜活。以流云筑造设施，巧思实用，助力研学与生活。",
+  "locations": [
+    {
+      "id": "loc-jixia-xueyuan",
+      "name": "稷下学院",
+      "description": "传奇求学圣地，三大学院环通天塔而建。学风浓郁，百态鲜活。以流云筑造设施，巧思实用，助力研学与生活。",
+      "image": "/images/maps/jixia-xueyuan.jpg"
+    },
+    {
+      "id": "loc-guanxing",
+      "name": "观星群山",
+      "description": "视野广阔的群山，观星台修筑于此，月升时分星象清晰。",
+      "image": "/images/maps/map1_2.jpg"
+    },
+    {
+      "id": "loc-qimen",
+      "name": "奇门秘境",
+      "description": "坐落着诸葛亮毕业大作奇门水榭的秘境溪谷，清幽之下，潜藏玄机奥妙。",
+      "image": "/images/maps/map1_3.png"
+    },
+    {
+      "id": "loc-mijin",
+      "name": "秘禁之地",
+      "description": "神秘危险的秘禁阁坐落于此，森严守备却不能阻止学子们的好奇心。",
+      "image": "/images/maps/map1_4.png"
+    }
+  ],
+  "chests": [
+    { "id": "chest-jx-001", "type": "华丽", "location": "通天塔顶层观景台，完成入学终极试炼后解锁" },
+    { "id": "chest-jx-002", "type": "珍贵", "location": "图书馆禁书区，需解开机关密码" },
+    { "id": "chest-jx-003", "type": "珍贵", "location": "三学院中央广场喷泉底部" },
+    { "id": "chest-jx-004", "type": "精致", "location": "武学院训练场武器架后方" },
+    { "id": "chest-jx-005", "type": "精致", "location": "文学院诗词碑林深处" },
+    { "id": "chest-jx-006", "type": "普通", "location": "食堂后厨储藏室角落" },
+    { "id": "chest-jx-007", "type": "普通", "location": "学生宿舍区屋顶" },
+    { "id": "chest-jx-008", "type": "普通", "location": "学院后门花圃假山下" }
+  ],
+  "waypoints": [
+    { "id": "wp-jx-001", "name": "通天塔", "location": "学院正中央" },
+    { "id": "wp-jx-002", "name": "图书馆", "location": "文学院北侧" },
+    { "id": "wp-jx-003", "name": "训练场", "location": "武学院西侧" },
+    { "id": "wp-jx-004", "name": "中央广场", "location": "三学院交汇处" }
+  ],
+  "collectibles": [
+    { "name": "稷下学典残页", "count": 10, "locations": ["图书馆各层书架", "文学院教室"] },
+    { "name": "流云结晶", "count": 15, "locations": ["学院各处流云设施旁"] },
+    { "name": "归虚梦演徽章", "count": 5, "locations": ["竞技场入口", "冠军雕像底座"] }
+  ]
+}

@@ -30,18 +30,32 @@ export default async function CharacterDetailPage({ params }: { params: Promise<
   const allChars = getAllCharacters();
 
   return (
-    <div className="max-w-4xl mx-auto">
-      <CharacterDetailHeader character={hero} />
-      <SkillList skills={hero.skills} />
-      <ConstellationList constellations={hero.constellations} />
-      <BuildRecommendation character={hero} allCharacters={allChars} />
+    <div className="relative">
+      {/* 背景图 */}
+      {hero.avatar && (
+        <div 
+          className="fixed inset-0 z-0 pointer-events-none"
+          style={{
+            backgroundImage: `url(${hero.avatar})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center top',
+          boxShadow: 'inset 0 0 0 2000px rgba(0,0,0,0.5)',
+          }}
+        />
+      )}
+      <div className="relative z-10 max-w-4xl mx-auto">
+        <CharacterDetailHeader character={hero} />
+        <SkillList skills={hero.skills} />
+        <ConstellationList constellations={hero.constellations} />
+        <BuildRecommendation character={hero} allCharacters={allChars} />
 
-      <section className="mt-8">
-        <SectionHeading title="背景故事" icon={<ScrollText className="w-5 h-5" />} />
-        <div className="bg-card rounded-lg border border-border p-6">
-          <p className="text-text-muted leading-relaxed">{hero.lore}</p>
-        </div>
-      </section>
+        <section className="mt-8">
+          <SectionHeading title="背景故事" icon={<ScrollText className="w-5 h-5" />} />
+          <div className="bg-card rounded-lg border border-border p-6">
+            <p className="text-text-muted leading-relaxed">{hero.lore}</p>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

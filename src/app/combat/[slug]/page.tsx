@@ -25,7 +25,18 @@ export default async function CombatDetailPage({ params }: { params: Promise<{ s
   if (!guide) notFound();
 
   return (
-    <article className="max-w-4xl mx-auto">
+    <div className="relative">
+      {/* 背景图 */}
+      <div 
+        className="fixed inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage: 'url(/images/media_v_bg.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          boxShadow: 'inset 0 0 0 2000px rgba(0,0,0,0.5)',
+        }}
+      />
+      <article className="relative z-10 max-w-4xl mx-auto">
       <header className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
           <Badge label={guide.meta.category} />
@@ -50,5 +61,6 @@ export default async function CombatDetailPage({ params }: { params: Promise<{ s
         </div>
       </div>
     </article>
+    </div>
   );
 }

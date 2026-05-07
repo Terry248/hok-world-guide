@@ -22,8 +22,20 @@ export default async function WeaponDetailPage({ params }: { params: Promise<{ i
   if (!weapon) notFound();
 
   return (
-    <div className="max-w-3xl mx-auto">
-      <WeaponDetail weapon={weapon} />
+    <div className="relative">
+      {/* 背景图 */}
+      <div 
+        className="fixed inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage: 'url(/images/media_tu_bg.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          boxShadow: 'inset 0 0 0 2000px rgba(0,0,0,0.5)',
+        }}
+      />
+      <div className="relative z-10 max-w-3xl mx-auto">
+        <WeaponDetail weapon={weapon} />
+      </div>
     </div>
   );
 }

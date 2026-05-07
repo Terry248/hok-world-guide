@@ -1,0 +1,43 @@
+{
+  "id": "region-shuangyun",
+  "name": "云落远山",
+  "description": "霜云镇百家齐聚霜云镇，在此展示百家特色凸显各自才能广招贤才，就连归虚梦演的冠军-曜都在此定居。",
+  "locations": [
+    {
+      "id": "loc-shuangyun",
+      "name": "霜云镇",
+      "description": "百家齐聚霜云镇，在此展示百家特色凸显各自才能广招贤才，就连归虚梦演的冠军-曜都在此定居。",
+      "image": "/images/maps/shuangyun-zhen.jpg"
+    },
+    {
+      "id": "loc-xiyunluo",
+      "name": "西云落高地",
+      "description": "云丝丰茂的秀美之境，吸引百家来此游历，渐成百家聚集之地。",
+      "image": "/images/maps/map4_1.jpg"
+    },
+    {
+      "id": "loc-dongyunluo",
+      "name": "东云落高地",
+      "description": "危险而神秘的高地上，四散着失落文明的古迹。",
+      "image": "/images/maps/map4_2.jpg"
+    }
+  ],
+  "chests": [
+    { "id": "chest-sy-001", "type": "华丽", "location": "曜的住所屋顶，需完成星之队任务解锁" },
+    { "id": "chest-sy-002", "type": "珍贵", "location": "百家争鸣广场中央雕像底座" },
+    { "id": "chest-sy-003", "type": "精致", "location": "霜云酒楼顶层包间" },
+    { "id": "chest-sy-004", "type": "精致", "location": "铁匠铺熔炉下方暗格" },
+    { "id": "chest-sy-005", "type": "普通", "location": "杂货店货架后方" },
+    { "id": "chest-sy-006", "type": "普通", "location": "镇口石碑后方" }
+  ],
+  "waypoints": [
+    { "id": "wp-sy-001", "name": "镇口", "location": "霜云镇主入口" },
+    { "id": "wp-sy-002", "name": "百家广场", "location": "镇中央" },
+    { "id": "wp-sy-003", "name": "曜的住所", "location": "镇东侧" }
+  ],
+  "collectibles": [
+    { "name": "百家典籍", "count": 10, "locations": ["各家学派驻地"] },
+    { "name": "霜云特产", "count": 12, "locations": ["镇中商铺"] },
+    { "name": "星之队信物", "count": 5, "locations": ["曜的住所附近"] }
+  ]
+}

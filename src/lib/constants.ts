@@ -29,6 +29,7 @@ export const SITE_CONFIG = {
   description: '最全王者荣耀世界游戏攻略',
   nav: [
     { label: '首页', href: '/' },
+    { label: '新手指南', href: '/beginner' },
     { label: '角色图鉴', href: '/characters' },
     { label: '武器大全', href: '/weapons' },
     { label: '地图探索', href: '/maps' },

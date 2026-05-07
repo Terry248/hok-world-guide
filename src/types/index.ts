@@ -14,6 +14,7 @@ export interface Character {
   rarity: Rarity;
   role: CharacterRole;
   avatar: string;
+  description?: string;
 }
 
 export interface CharacterDetail extends Character {
@@ -62,12 +63,21 @@ export interface Region {
   name: string;
   description: string;
   coverImage: string;
+  locations?: Location[];
+}
+
+export interface Location {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
 }
 
 export interface RegionDetail {
   id: string;
   name: string;
   description: string;
+  locations: Location[];
   chests: Chest[];
   waypoints: Waypoint[];
   collectibles: Collectible[];

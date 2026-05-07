@@ -1,46 +1,59 @@
 'use client';
 
 import { useTeamStore } from '@/stores/team-store';
+import type { Character } from '@/types';
+import { Zap, Shield, Flame, Snowflake } from 'lucide-react';
 
 const PRESETS = [
   {
-    name: '感电爆发队',
-    ids: ['char-001', 'char-002', 'char-004', 'char-006'],
+    name: '星之队羁绊',
+    ids: ['char-dongfangyao', 'char-xishi', 'char-sunbin', 'char-mengya'],
+    desc: '激活星之队全队羁绊效果',
+    icon: <Zap className="w-4 h-4" />,
   },
   {
-    name: '纯雷速通队',
-    ids: ['char-001', 'char-007', 'char-004', 'char-006'],
+    name: '长城守卫军',
+    ids: ['char-huamulan', 'char-kai', 'char-wangzhaojun', 'char-jialuo'],
+    desc: '攻守兼备的北方阵容',
+    icon: <Shield className="w-4 h-4" />,
   },
   {
-    name: '双核控制队',
-    ids: ['char-005', 'char-002', 'char-003', 'char-006'],
+    name: '元素反应队',
+    ids: ['char-yuanliu', 'char-mengya', 'char-wangzhaojun', 'char-dongfangyao'],
+    desc: '多元素触发连锁反应',
+    icon: <Flame className="w-4 h-4" />,
   },
 ];
 
-export function BuildPresets({ characters }: { characters: any[] }) {
+export function BuildPresets({ characters }: { characters: Character[] }) {
   const { loadPreset } = useTeamStore();
 
   return (
     <div className="space-y-2">
       <h3 className="font-medium text-sm text-text-muted">预设阵容</h3>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-        {PRESETS.map((preset) => (
-          <button
-            key={preset.name}
-            onClick={() => {
-              const chars = preset.ids
-                .map(id => characters.find(c => c.id === id))
-                .filter(Boolean);
-              loadPreset(chars);
-            }}
-            className="bg-card border border-border rounded-lg p-3 text-left hover:border-primary transition-colors"
-          >
-            <p className="font-medium text-sm">{preset.name}</p>
-            <p className="text-xs text-text-muted mt-1">
-              {preset.ids.map(id => characters.find(c => c.id === id)?.name).filter(Boolean).join(' · ')}
-            </p>
-          </button>
-        ))}
+        {PRESETS.map((preset) => {
+          const chars = preset.ids
+            .map(id => characters.find(c => c.id === id))
+            .filter(Boolean) as Character[];
+          
+          return (
+            <button
+              key={preset.name}
+              onClick={() => loadPreset(chars)}
+              className="bg-card border border-border rounded-lg p-3 text-left hover:border-primary transition-colors"
+            >
+              <div className="flex items-center gap-2">
+                <span className="text-primary">{preset.icon}</span>
+                <p className="font-medium text-sm">{preset.name}</p>
+              </div>
+              <p className="text-xs text-text-muted mt-1">{preset.desc}</p>
+              <p className="text-xs text-text-muted/60 mt-1">
+                {chars.map(c => c.name).join(' · ')}
+              </p>
+            </button>
+          );
+        })}
       </div>
     </div>
   );

@@ -6,7 +6,7 @@
   "weaponType": "剑",
   "rarity": 5,
   "role": "输出",
-  "avatar": "/images/characters/dongfang-yao.png",
+  "avatar": "/images/characters/dongfang-yao.jpg",
   "stats": {
     "hp": 11500,
     "attack": 380,
@@ -20,25 +20,36 @@
       "name": "星辰之剑",
       "type": "普攻",
       "description": "挥动星辰之剑进行至多四段连续斩击，攻击范围广，清杂能力强。蓄力普攻可向前突进并发动强力挥砍。",
-      "multipliers": [0.7, 0.7, 0.8, 1.0]
+      "multipliers": [
+        0.7,
+        0.7,
+        0.8,
+        1.0
+      ]
     },
     {
       "name": "一技能·裂空斩",
       "type": "战技",
       "description": "旋转剑刃造成大范围雷元素伤害。辉光状态下造成额外雷元素伤害，是主要的AOE输出技能。",
-      "multipliers": [2.2]
+      "multipliers": [
+        2.2
+      ]
     },
     {
       "name": "二技能·逐星",
       "type": "战技",
       "description": "快速突进造成伤害，突进距离远。辉光状态下突进距离进一步增加，可追击远处敌人。",
-      "multipliers": [1.8]
+      "multipliers": [
+        1.8
+      ]
     },
     {
       "name": "三技能·星河破裂",
       "type": "终结技",
       "description": "终极技能，高伤害+强突进+战术重置。对目标造成巨额雷元素伤害，命中后可重置其他技能的冷却时间。",
-      "multipliers": [3.0]
+      "multipliers": [
+        3.0
+      ]
     },
     {
       "name": "星辰之赐",
@@ -52,19 +63,67 @@
     }
   ],
   "constellations": [
-    { "level": 1, "name": "星辰", "description": "辉光状态下的强化技能伤害提升25%" },
-    { "level": 2, "name": "斩空", "description": "裂空斩的范围扩大30%" },
-    { "level": 3, "name": "星之队长", "description": "裂空斩技能等级+3" },
-    { "level": 4, "name": "辉光", "description": "辉光状态持续时间延长至15秒" },
-    { "level": 5, "name": "逐星", "description": "终结技技能等级+3" },
-    { "level": 6, "name": "万星归宗", "description": "终结技持续期间，每次释放技能自动获得一层星辰之力" }
+    {
+      "level": 1,
+      "name": "星辰",
+      "description": "辉光状态下的强化技能伤害提升25%"
+    },
+    {
+      "level": 2,
+      "name": "斩空",
+      "description": "裂空斩的范围扩大30%"
+    },
+    {
+      "level": 3,
+      "name": "星之队长",
+      "description": "裂空斩技能等级+3"
+    },
+    {
+      "level": 4,
+      "name": "辉光",
+      "description": "辉光状态持续时间延长至15秒"
+    },
+    {
+      "level": 5,
+      "name": "逐星",
+      "description": "终结技技能等级+3"
+    },
+    {
+      "level": 6,
+      "name": "万星归宗",
+      "description": "终结技持续期间，每次释放技能自动获得一层星辰之力"
+    }
   ],
-  "recommendedWeapons": ["wp-003", "wp-009"],
-  "recommendedTeams": [["char-yuanliu", "char-xishi", "char-mengya"], ["char-kai", "char-sunbin", "char-wangzhaojun"]],
+  "recommendedWeapons": [
+    "wp-003",
+    "wp-009"
+  ],
+  "recommendedTeams": [
+    [
+      "char-yuanliu",
+      "char-xishi",
+      "char-mengya"
+    ],
+    [
+      "char-kai",
+      "char-sunbin",
+      "char-wangzhaojun"
+    ]
+  ],
   "ascensionMaterials": [
-    { "name": "雷光水晶", "count": 46 },
-    { "name": "星辰碎片", "count": 20 },
-    { "name": "稷下勋章", "count": 18 }
+    {
+      "name": "雷光水晶",
+      "count": 46
+    },
+    {
+      "name": "星辰碎片",
+      "count": 20
+    },
+    {
+      "name": "稷下勋章",
+      "count": 18
+    }
   ],
-  "lore": "东方曜，稷下星之队的队长，称号「星之队长」。继承了星辰之力，以雷元素之剑为武器。他性格豪爽，战斗风格华丽而高效。在王者荣耀世界中，东方曜是新手期主线赠送的首发角色之一，凭借其强大的AOE清杂能力、大范围追击能力和高机动性，是开荒期的主力输出。核心机制围绕「辉光」状态管理，通过技能命中积攒星辰之力，进入辉光后爆发极高。"
+  "lore": "东方曜，稷下星之队的队长，称号「星之队长」。继承了星辰之力，以雷元素之剑为武器。他性格豪爽，战斗风格华丽而高效。在王者荣耀世界中，东方曜是新手期主线赠送的首发角色之一，凭借其强大的AOE清杂能力、大范围追击能力和高机动性，是开荒期的主力输出。核心机制围绕「辉光」状态管理，通过技能命中积攒星辰之力，进入辉光后爆发极高。",
+  "description": "星之队队长，星辰之力继承人。为了守护同伴担负起更多责任而不断精进努力。"
 }

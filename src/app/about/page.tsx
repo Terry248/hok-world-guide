@@ -3,7 +3,18 @@ import { Info } from 'lucide-react';
 
 export default function AboutPage() {
   return (
-    <div className="max-w-3xl mx-auto space-y-8">
+    <div className="relative">
+      {/* 背景图 */}
+      <div 
+        className="fixed inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage: 'url(/images/home-bg.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          boxShadow: 'inset 0 0 0 2000px rgba(0,0,0,0.5)',
+        }}
+      />
+      <div className="relative z-10 max-w-3xl mx-auto space-y-8">
       <div>
         <SectionHeading title="关于本站" icon={<Info className="w-6 h-6" />} />
         <div className="bg-card rounded-xl border border-border p-6 space-y-4 text-text-muted leading-relaxed">
@@ -25,6 +36,7 @@ export default function AboutPage() {
             <li>分享你的配队方案</li>
           </ul>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -12,8 +12,16 @@ export function CharacterDetailHeader({ character }: CharacterDetailHeaderProps)
     <div className="relative bg-gradient-to-r from-card to-card-hover rounded-xl p-6 mb-8 border border-border overflow-hidden">
       <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
         {/* Avatar */}
-        <div className="w-32 h-32 md:w-40 md:h-40 rounded-xl bg-background/50 flex items-center justify-center text-6xl border border-border flex-shrink-0">
-          🎭
+        <div className="w-32 h-32 md:w-40 md:h-40 rounded-xl bg-background/50 flex items-center justify-center text-6xl border border-border flex-shrink-0 overflow-hidden">
+          {character.avatar ? (
+            <img 
+              src={character.avatar} 
+              alt={character.name}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <span>🎭</span>
+          )}
         </div>
 
         {/* Info */}
@@ -29,6 +37,9 @@ export function CharacterDetailHeader({ character }: CharacterDetailHeaderProps)
             <Badge label={character.weaponType + '器'} />
             <Badge label={character.element + '元素'} />
           </div>
+          {character.description && (
+            <p className="text-text-muted mt-2 max-w-2xl">{character.description}</p>
+          )}
         </div>
       </div>
     </div>

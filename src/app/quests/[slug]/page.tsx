@@ -25,7 +25,18 @@ export default async function QuestDetailPage({ params }: { params: Promise<{ sl
   if (!guide) notFound();
 
   return (
-    <article className="max-w-4xl mx-auto">
+    <div className="relative">
+      {/* 背景图 */}
+      <div 
+        className="fixed inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage: 'url(/images/news3_bg2.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          boxShadow: 'inset 0 0 0 2000px rgba(0,0,0,0.5)',
+        }}
+      />
+      <article className="relative z-10 max-w-4xl mx-auto">
       {/* Header */}
       <header className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
@@ -54,5 +65,6 @@ export default async function QuestDetailPage({ params }: { params: Promise<{ sl
         </div>
       </div>
     </article>
+    </div>
   );
 }

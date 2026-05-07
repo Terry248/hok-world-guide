@@ -6,7 +6,7 @@
   "weaponType": "法杖",
   "rarity": 5,
   "role": "辅助",
-  "avatar": "/images/characters/xishi.png",
+  "avatar": "/images/characters/xishi.jpg",
   "stats": {
     "hp": 10000,
     "attack": 280,
@@ -20,19 +20,27 @@
       "name": "幻纱之灵",
       "type": "普攻",
       "description": "操控幻纱进行攻击，获得「幻纱缠心」状态。进入幻纱缠心状态期间，普攻可以反弹治疗效果给友方，接下来的2次技能施放会推出3个法球且伤害提升。",
-      "multipliers": [0.5, 0.5, 0.8]
+      "multipliers": [
+        0.5,
+        0.5,
+        0.8
+      ]
     },
     {
       "name": "幻纱牵引",
       "type": "战技",
       "description": "战术核心技能。释放后生成法阵，拉取范围内的敌人并造成草元素伤害，同时为周围友军恢复生命值。若敌人持续在法阵内，会不断受到伤害。",
-      "multipliers": [1.5]
+      "multipliers": [
+        1.5
+      ]
     },
     {
       "name": "莲华法器",
       "type": "终结技",
       "description": "召唤莲花法器拉取敌人并造成范围草元素伤害，法器随后爆炸。爆炸范围内所有敌人受到高额法术伤害，队友获得护盾。",
-      "multipliers": [2.0]
+      "multipliers": [
+        2.0
+      ]
     },
     {
       "name": "纱球融合",
@@ -46,19 +54,67 @@
     }
   ],
   "constellations": [
-    { "level": 1, "name": "幻纱", "description": "幻纱牵引的拉取范围扩大20%" },
-    { "level": 2, "name": "缠心", "description": "治疗量提升30%" },
-    { "level": 3, "name": "幻纱之灵", "description": "幻纱牵引技能等级+3" },
-    { "level": 4, "name": "融合", "description": "法球融合后的爆炸伤害提升50%" },
-    { "level": 5, "name": "莲华", "description": "终结技技能等级+3" },
-    { "level": 6, "name": "幻纱领域", "description": "莲华法器爆炸后生成一个持续10秒的草元素治疗领域" }
+    {
+      "level": 1,
+      "name": "幻纱",
+      "description": "幻纱牵引的拉取范围扩大20%"
+    },
+    {
+      "level": 2,
+      "name": "缠心",
+      "description": "治疗量提升30%"
+    },
+    {
+      "level": 3,
+      "name": "幻纱之灵",
+      "description": "幻纱牵引技能等级+3"
+    },
+    {
+      "level": 4,
+      "name": "融合",
+      "description": "法球融合后的爆炸伤害提升50%"
+    },
+    {
+      "level": 5,
+      "name": "莲华",
+      "description": "终结技技能等级+3"
+    },
+    {
+      "level": 6,
+      "name": "幻纱领域",
+      "description": "莲华法器爆炸后生成一个持续10秒的草元素治疗领域"
+    }
   ],
-  "recommendedWeapons": ["wp-006", "wp-004"],
-  "recommendedTeams": [["char-yuanliu", "char-dongfangyao", "char-mengya"], ["char-kai", "char-sunbin", "char-jialuo"]],
+  "recommendedWeapons": [
+    "wp-006",
+    "wp-004"
+  ],
+  "recommendedTeams": [
+    [
+      "char-yuanliu",
+      "char-dongfangyao",
+      "char-mengya"
+    ],
+    [
+      "char-kai",
+      "char-sunbin",
+      "char-jialuo"
+    ]
+  ],
   "ascensionMaterials": [
-    { "name": "草木精华", "count": 46 },
-    { "name": "幻纱丝绸", "count": 20 },
-    { "name": "莲华之露", "count": 18 }
+    {
+      "name": "草木精华",
+      "count": 46
+    },
+    {
+      "name": "幻纱丝绸",
+      "count": 20
+    },
+    {
+      "name": "莲华之露",
+      "count": 18
+    }
   ],
-  "lore": "西施，稷下星之队的宝藏少女。在王者荣耀世界中，西施定位为辅助和控制角色，是开荒期推荐的核心辅助之一。她拥有强大的战术控制能力，兼具治疗队友和聚怪爆发功能。她的幻纱技能可以拉取敌人，配合球类技能打出高额爆发，是新手队伍中不可或缺的回血+增伤辅助。草元素法杖使她在元素反应队伍中具有重要的战略价值。"
+  "lore": "西施，稷下星之队的宝藏少女。在王者荣耀世界中，西施定位为辅助和控制角色，是开荒期推荐的核心辅助之一。她拥有强大的战术控制能力，兼具治疗队友和聚怪爆发功能。她的幻纱技能可以拉取敌人，配合球类技能打出高额爆发，是新手队伍中不可或缺的回血+增伤辅助。草元素法杖使她在元素反应队伍中具有重要的战略价值。",
+  "description": "星之队的门面，寻宝高手，宝藏少女。比珍宝更想要的，是被珍藏的心意。"
 }

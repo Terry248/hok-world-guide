@@ -1,7 +1,7 @@
 import type { RegionDetail, ChestType } from '@/types';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Badge } from '@/components/shared/badge';
-import { MapPin, Gem, Package } from 'lucide-react';
+import { MapPin, Gem, Package, Mountain } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface RegionDetailContentProps {
@@ -23,11 +23,34 @@ export function RegionDetailContent({ region }: RegionDetailContentProps) {
         <h1 className="text-2xl font-bold mb-2">{region.name}</h1>
         <p className="text-text-muted">{region.description}</p>
         <div className="flex flex-wrap gap-3 mt-4">
+          <Badge label={`地点 × ${region.locations.length}`} />
           <Badge label={`宝箱 × ${region.chests.length}`} />
           <Badge label={`传送点 × ${region.waypoints.length}`} />
           <Badge label={`收集品 × ${region.collectibles.length}`} />
         </div>
       </div>
+
+      {/* Locations */}
+      <section>
+        <SectionHeading title="区域地点" icon={<Mountain className="w-5 h-5" />} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {region.locations.map((loc) => (
+            <div key={loc.id} className="bg-card rounded-xl border border-border overflow-hidden group">
+              <div className="aspect-[16/9] overflow-hidden">
+                <img 
+                  src={loc.image} 
+                  alt={loc.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-lg mb-1">{loc.name}</h3>
+                <p className="text-sm text-text-muted">{loc.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Waypoints */}
       <section>

@@ -6,7 +6,7 @@
   "weaponType": "锤",
   "rarity": 5,
   "role": "辅助",
-  "avatar": "/images/characters/luban-master.png",
+  "avatar": "/images/characters/luban-master.jpg",
   "stats": {
     "hp": 14000,
     "attack": 240,
@@ -20,19 +20,27 @@
       "name": "机关连击",
       "type": "普攻",
       "description": "挥舞机关锤进行攻击，技能施法或命中目标时叠加护盾（可叠4层），增强生存并增加物攻。",
-      "multipliers": [0.8, 0.8, 1.0]
+      "multipliers": [
+        0.8,
+        0.8,
+        1.0
+      ]
     },
     {
       "name": "鲁班5号",
       "type": "战技",
       "description": "核心功能型技能。召唤小型机关单位「鲁班5号」突进，击退敌人，使下一次普攻转化为高频率激光冲击。伤害主要来源于召唤物鲁班5号。",
-      "multipliers": [1.5]
+      "multipliers": [
+        1.5
+      ]
     },
     {
       "name": "电能链接",
       "type": "终结技",
       "description": "积攒满亢奋值后开启，自动触发蓄能震击，使鲁班5号进入亢奋模式，为团队提供暴击伤害增益。大招同时具有聚怪控制效果，团战中用大招聚怪后主C输出效率翻倍。",
-      "multipliers": [1.0]
+      "multipliers": [
+        1.0
+      ]
     },
     {
       "name": "助手驰援",
@@ -46,19 +54,67 @@
     }
   ],
   "constellations": [
-    { "level": 1, "name": "神匠", "description": "鲁班5号的持续时间延长30%" },
-    { "level": 2, "name": "激光", "description": "激光冲击的伤害提升25%" },
-    { "level": 3, "name": "机关连击", "description": "鲁班5号技能等级+3" },
-    { "level": 4, "name": "亢奋", "description": "电能链接的暴击增益效果提升50%" },
-    { "level": 5, "name": "震击", "description": "终结技技能等级+3" },
-    { "level": 6, "name": "超载模式", "description": "鲁班5号进入亢奋模式时，额外召唤一个辅助机关" }
+    {
+      "level": 1,
+      "name": "神匠",
+      "description": "鲁班5号的持续时间延长30%"
+    },
+    {
+      "level": 2,
+      "name": "激光",
+      "description": "激光冲击的伤害提升25%"
+    },
+    {
+      "level": 3,
+      "name": "机关连击",
+      "description": "鲁班5号技能等级+3"
+    },
+    {
+      "level": 4,
+      "name": "亢奋",
+      "description": "电能链接的暴击增益效果提升50%"
+    },
+    {
+      "level": 5,
+      "name": "震击",
+      "description": "终结技技能等级+3"
+    },
+    {
+      "level": 6,
+      "name": "超载模式",
+      "description": "鲁班5号进入亢奋模式时，额外召唤一个辅助机关"
+    }
   ],
-  "recommendedWeapons": ["wp-007", "wp-006"],
-  "recommendedTeams": [["char-mengya", "char-sunbin", "char-yuanliu"], ["char-jialuo", "char-wangzhaojun", "char-dongfangyao"]],
+  "recommendedWeapons": [
+    "wp-007",
+    "wp-006"
+  ],
+  "recommendedTeams": [
+    [
+      "char-mengya",
+      "char-sunbin",
+      "char-yuanliu"
+    ],
+    [
+      "char-jialuo",
+      "char-wangzhaojun",
+      "char-dongfangyao"
+    ]
+  ],
   "ascensionMaterials": [
-    { "name": "雷光水晶", "count": 46 },
-    { "name": "机关核心", "count": 20 },
-    { "name": "神匠齿轮", "count": 18 }
+    {
+      "name": "雷光水晶",
+      "count": 46
+    },
+    {
+      "name": "机关核心",
+      "count": 20
+    },
+    {
+      "name": "神匠齿轮",
+      "count": 18
+    }
   ],
-  "lore": "鲁班大师，稷下学院的神匠。在王者荣耀世界中，鲁班大师定位为辅助角色，擅长科技增益。他是震系辅助职业的代表，偏向输出的战术辅助。他主要靠召唤物「鲁班5号」造成伤害，同时拥有拉人保C、聚怪控制等强大的团队功能。搭配蒙犽时可打出最高的伤害输出，是科技流队伍的核心辅助。"
+  "lore": "鲁班大师，稷下学院的神匠。在王者荣耀世界中，鲁班大师定位为辅助角色，擅长科技增益。他是震系辅助职业的代表，偏向输出的战术辅助。他主要靠召唤物「鲁班5号」造成伤害，同时拥有拉人保C、聚怪控制等强大的团队功能。搭配蒙犽时可打出最高的伤害输出，是科技流队伍的核心辅助。",
+  "description": "星之队的团魂，真正的机关大师。用冰冷的机关创造柔情；用真理的蓝图创造未来。"
 }

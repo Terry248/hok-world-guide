@@ -6,7 +6,7 @@ import { CharacterCard } from '@/components/characters/character-card';
 import { GuideCard } from '@/components/guides/guide-card';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { SearchInput } from '@/components/shared/search-input';
-import { Sword, BookOpen, Map, Users, Shield } from 'lucide-react';
+import { Sword, BookOpen, Map, Users, Shield, Compass } from 'lucide-react';
 
 export default function HomePage() {
   const heroes = getFeaturedCharacters(6);
@@ -16,7 +16,18 @@ export default function HomePage() {
   const regions = getAllRegions();
 
   return (
-    <div className="space-y-12">
+    <div className="relative">
+      {/* 首页背景图 */}
+      <div 
+        className="fixed inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage: 'url(/images/home-bg.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          boxShadow: 'inset 0 0 0 2000px rgba(0,0,0,0.5)',
+        }}
+      />
+      <div className="relative z-10 space-y-12">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/20 via-card to-secondary/10 rounded-2xl p-8 md:p-12 text-center border border-border">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">
@@ -32,11 +43,12 @@ export default function HomePage() {
       </section>
 
       {/* Quick Links */}
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <section className="grid grid-cols-2 md:grid-cols-5 gap-4">
         <QuickLink href="/characters" icon={<Sword />} label="角色图鉴" desc="全角色详细信息" />
         <QuickLink href="/weapons" icon={<Shield />} label="武器大全" desc="装备属性大全" />
         <QuickLink href="/maps" icon={<Map />} label="地图探索" desc="宝箱/收集品路线" />
         <QuickLink href="/builder" icon={<Users />} label="配队模拟" desc="队伍搭配模拟器" />
+        <QuickLink href="/beginner" icon={<Compass />} label="新手指南" desc="快速入门攻略" />
       </section>
 
       {/* Featured Heroes */}
@@ -80,8 +92,16 @@ export default function HomePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {regions.map((region) => (
             <Link key={region.id} href={`/maps/${region.id}`} className="group block bg-card rounded-xl border border-border overflow-hidden hover:border-primary/50 transition-all">
-              <div className="h-24 bg-gradient-to-b from-card-hover to-card flex items-center justify-center">
-                <span className="text-3xl opacity-30 group-hover:opacity-60 transition-opacity">🗺️</span>
+              <div className="h-24 bg-gradient-to-b from-card-hover to-card flex items-center justify-center overflow-hidden">
+                {region.coverImage ? (
+                  <img 
+                    src={region.coverImage} 
+                    alt={region.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <span className="text-3xl opacity-30 group-hover:opacity-60 transition-opacity">🗺️</span>
+                )}
               </div>
               <div className="p-3">
                 <h3 className="font-medium text-sm group-hover:text-primary transition-colors">{region.name}</h3>
@@ -90,6 +110,7 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      </div>
     </div>
   );
 }

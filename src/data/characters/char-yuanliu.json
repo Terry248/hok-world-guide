@@ -6,7 +6,8 @@
   "weaponType": "剑",
   "rarity": 5,
   "role": "输出",
-  "avatar": "/images/characters/yuanliu.png",
+  "avatar": "/images/characters/yuanliu.jpg",
+  "description": "失去过往记忆的稷下新生，故事的主角，游历世界的旅者，玩家的化身。",
   "stats": {
     "hp": 12000,
     "attack": 320,
