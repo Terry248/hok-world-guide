@@ -1,25 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Noto_Sans_SC } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { AdSidebar } from "@/components/layout/ad-sidebar";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const notoSansSC = Noto_Sans_SC({
-  variable: "--font-noto-sc",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
 
 export const metadata: Metadata = {
   title: {
@@ -37,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${notoSansSC.variable} font-sans min-h-screen flex flex-col`}
+        className="font-sans min-h-screen flex flex-col"
       >
         <Header />
         <AdSidebar />
