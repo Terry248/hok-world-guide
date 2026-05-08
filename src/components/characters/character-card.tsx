@@ -14,9 +14,10 @@ export function CharacterCard({ character }: CharacterCardProps) {
       <div className="aspect-[4/3] bg-gradient-to-b from-card-hover to-card flex items-center justify-center overflow-hidden">
         {character.avatar ? (
           <img 
-            src={character.avatar} 
+            src={character.avatar.replace('/images/characters/', '/images/characters/thumbs/')} 
             alt={character.name}
             className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
           />
         ) : (
           <div className="text-6xl opacity-30 group-hover:opacity-50 transition-opacity">🎭</div>

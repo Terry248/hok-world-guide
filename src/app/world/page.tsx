@@ -206,15 +206,15 @@ export default function WorldPage() {
 }
 
 const worldCharacters = [
-  { id: 'char-yuanliu', name: '元流之子', title: '原初之流 · 主角', image: '/images/characters/yuanliu.jpg' },
-  { id: 'char-dongfangyao', name: '东方曜', title: '星辰之子 · 雷元素主C', image: '/images/characters/dongfang-yao.jpg' },
-  { id: 'char-xishi', name: '西施', title: '幻纱之灵 · 草元素辅助', image: '/images/characters/xishi.jpg' },
-  { id: 'char-sunbin', name: '孙膑', title: '逆流之时 · 风元素辅助', image: '/images/characters/sunbin.jpg' },
-  { id: 'char-mengya', name: '蒙犽', title: '烈炮小子 · 火元素输出', image: '/images/characters/meng-ya.jpg' },
-  { id: 'char-lubandashi', name: '鲁班大师', title: '神匠 · 岩元素辅助', image: '/images/characters/luban-master.jpg' },
-  { id: 'char-lengchun', name: '冷春', title: '绯瞳刃舞 · 暗元素输出', image: '/images/characters/lengchun.jpg' },
-  { id: 'char-huamulan', name: '花木兰', title: '传说之刃 · 火元素主C', image: '/images/characters/huamulan.jpg' },
-  { id: 'char-kai', name: '铠', title: '破灭刃锋 · 冰元素主C', image: '/images/characters/kai.jpg' },
-  { id: 'char-wangzhaojun', name: '王昭君', title: '冰雪之华 · 冰元素辅助', image: '/images/characters/wang-zhaojun.jpg' },
-  { id: 'char-jialuo', name: '伽罗', title: '破魔之箭 · 光元素输出', image: '/images/characters/jialuo.jpg' },
+  { id: 'char-yuanliu', name: '元流之子', title: '原初之流 · 主角', image: '/images/characters/thumbs/yuanliu.jpg' },
+  { id: 'char-dongfangyao', name: '东方曜', title: '星辰之子 · 雷元素主C', image: '/images/characters/thumbs/dongfang-yao.jpg' },
+  { id: 'char-xishi', name: '西施', title: '幻纱之灵 · 草元素辅助', image: '/images/characters/thumbs/xishi.jpg' },
+  { id: 'char-sunbin', name: '孙膑', title: '逆流之时 · 风元素辅助', image: '/images/characters/thumbs/sunbin.jpg' },
+  { id: 'char-mengya', name: '蒙犽', title: '烈炮小子 · 火元素输出', image: '/images/characters/thumbs/meng-ya.jpg' },
+  { id: 'char-lubandashi', name: '鲁班大师', title: '神匠 · 岩元素辅助', image: '/images/characters/thumbs/luban-master.jpg' },
+  { id: 'char-lengchun', name: '冷春', title: '绯瞳刃舞 · 暗元素输出', image: '/images/characters/thumbs/lengchun.jpg' },
+  { id: 'char-huamulan', name: '花木兰', title: '传说之刃 · 火元素主C', image: '/images/characters/thumbs/huamulan.jpg' },
+  { id: 'char-kai', name: '铠', title: '破灭刃锋 · 冰元素主C', image: '/images/characters/thumbs/kai.jpg' },
+  { id: 'char-wangzhaojun', name: '王昭君', title: '冰雪之华 · 冰元素辅助', image: '/images/characters/thumbs/wang-zhaojun.jpg' },
+  { id: 'char-jialuo', name: '伽罗', title: '破魔之箭 · 光元素输出', image: '/images/characters/thumbs/jialuo.jpg' },
 ];
