@@ -2,6 +2,7 @@ import type { Character } from '@/types';
 import { ElementIcon } from '@/components/shared/element-icon';
 import { RarityStars } from '@/components/shared/rarity-stars';
 import { Badge } from '@/components/shared/badge';
+import { CharacterAvatarLightbox } from './character-avatar-lightbox';
 
 interface CharacterDetailHeaderProps {
   character: Character;
@@ -11,13 +12,12 @@ export function CharacterDetailHeader({ character }: CharacterDetailHeaderProps)
   return (
     <div className="relative bg-gradient-to-r from-card to-card-hover rounded-xl p-6 mb-8 border border-border overflow-hidden">
       <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
-        {/* Avatar */}
+        {/* Avatar - 点击打开全身像灯箱 */}
         <div className="w-32 h-32 md:w-40 md:h-40 rounded-xl bg-background/50 flex items-center justify-center text-6xl border border-border flex-shrink-0 overflow-hidden">
           {character.avatar ? (
-            <img 
+            <CharacterAvatarLightbox 
               src={character.avatar} 
               alt={character.name}
-              className="w-full h-full object-cover"
             />
           ) : (
             <span>🎭</span>

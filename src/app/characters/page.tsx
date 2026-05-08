@@ -12,7 +12,7 @@ export default function CharactersPage() {
       <div 
         className="fixed inset-0 z-0 pointer-events-none"
         style={{
-          backgroundImage: 'url(/images/characters/dongfang-yao.jpg)',
+          backgroundImage: 'url(/images/characters/wang-zhaojun.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
           boxShadow: 'inset 0 0 0 2000px rgba(0,0,0,0.5)',
