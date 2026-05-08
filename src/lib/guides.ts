@@ -9,7 +9,7 @@ function getGuidesDir(type: 'quests' | 'combat' | 'guides') {
 
 function parseGuides(dir: string): GuideMeta[] {
   if (!fs.existsSync(dir)) return [];
-  const files = fs.readdirSync(dir).filter(f => f.endsWith('.md'));
+  const files = fs.readdirSync(dir).filter(f => f.endsWith('.md') && !f.startsWith('._'));
   return files.map(file => {
     const content = fs.readFileSync(path.join(dir, file), 'utf-8');
     const { data } = matter(content);
@@ -32,7 +32,7 @@ export function getGuides(): GuideMeta[] {
 export function getGuideBySlug(slug: string, type: 'quests' | 'combat' | 'guides'): { meta: GuideMeta; content: string } | null {
   const dir = getGuidesDir(type);
   if (!fs.existsSync(dir)) return null;
-  const files = fs.readdirSync(dir).filter(f => f.endsWith('.md'));
+  const files = fs.readdirSync(dir).filter(f => f.endsWith('.md') && !f.startsWith('._'));
   const file = files.find(f => {
     const { data } = matter(fs.readFileSync(path.join(dir, f), 'utf-8'));
     return (data as GuideMeta).slug === slug;
@@ -44,5 +44,5 @@ export function getGuideBySlug(slug: string, type: 'quests' | 'combat' | 'guides
 }
 
 export function getAllSlugs(type: 'quests' | 'combat' | 'guides'): string[] {
-  return parseGuides(getGuidesDir(type)).map(g => g.slug);
+  return parseGuides(getGuidesDir(type)).map(g => g.slug).filter((slug): slug is string => typeof slug === 'string' && slug.length > 0);
 }

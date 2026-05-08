@@ -16,7 +16,7 @@ export function GuideCard({ guide, type = 'guide' }: GuideCardProps) {
       <p className="text-sm text-text-muted line-clamp-2 mb-3">{guide.excerpt}</p>
       <div className="flex flex-wrap items-center gap-2 text-xs text-text-muted">
         <Badge label={guide.category} />
-        {guide.tags.slice(0, 3).map((tag) => (
+        {(guide.tags || []).slice(0, 3).map((tag) => (
           <Tag key={tag} label={tag} />
         ))}
         <span className="ml-auto">{guide.date}</span>
