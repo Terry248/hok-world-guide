@@ -19,6 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN" className="dark">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4441684825498793"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body
         className="font-sans min-h-screen flex flex-col"
       >

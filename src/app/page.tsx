@@ -50,7 +50,7 @@ export default function HomePage() {
         <QuickLink href="/builder" icon={<Users />} label="配队模拟" desc="队伍搭配模拟器" />
         <QuickLink href="/beginner" icon={<Compass />} label="新手指南" desc="快速入门攻略" />
         <QuickLink href="/world" icon={<Globe />} label="世界观" desc="王者大陆全览" />
-        <QuickLink href="/community" icon={<MessageSquare />} label="留言墙" desc="玩家交流心得" />
+        {/* <QuickLink href="/community" icon={<MessageSquare />} label="留言墙" desc="玩家交流心得" /> */}
       </section>
 
       {/* Featured Heroes */}
