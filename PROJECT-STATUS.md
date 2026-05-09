@@ -1,6 +1,6 @@
 # 王者荣耀世界攻略站 — 项目进度总览
 
-**最后更新:** 2026-05-08 14:25  
+**最后更新:** 2026-05-09 16:25  
 **项目路径:** `~/Library/Application Support/Claude/hok-world-guide`  
 **技术栈:** Next.js 16.2.5 + React 19.2.4 + Tailwind CSS v4 + TypeScript  
 **总文件数:** 121个源码文件 + 38个公共资源

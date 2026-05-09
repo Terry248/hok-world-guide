@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hok-world-guide.vercel.app/sitemap.xml
