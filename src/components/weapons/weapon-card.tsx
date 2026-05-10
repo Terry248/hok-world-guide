@@ -26,25 +26,38 @@ export function WeaponCard({ weapon }: WeaponCardProps) {
     >
       {/* 图标区域 */}
       <div className={cn(
-        'relative h-28 flex items-center justify-center bg-gradient-to-br',
-        style.gradient
+        'relative h-36 overflow-hidden flex items-center justify-center',
+        'bg-gradient-to-br from-slate-800 to-slate-900'
       )}>
-        <div className={cn(
-          'w-14 h-14 rounded-2xl bg-background/60 backdrop-blur-sm border flex items-center justify-center transition-transform duration-300 group-hover:scale-110',
-          style.borderColor
-        )}>
-          <WeaponTypeIcon type={weapon.type} className={cn('w-7 h-7', style.iconColor)} />
+        {/* 武器图片 */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img
+            src={weapon.icon}
+            alt={weapon.name}
+            className="h-full w-full object-contain p-2 transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+          />
         </div>
-        {isHighRarity && (
-          <div className="absolute top-2 right-2">
-            <span className={cn(
-              'text-[10px] px-1.5 py-0.5 rounded-full font-medium',
-              weapon.rarity === 5 ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30' : 'bg-purple-500/20 text-purple-400 border border-purple-500/30'
-            )}>
-              {weapon.rarity}星
-            </span>
-          </div>
-        )}
+        {/* 渐变蒙层 */}
+        <div className={cn(
+          'absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent'
+        )} />
+        {/* 底部类型标签 */}
+        <div className="absolute bottom-2 left-2 flex items-center gap-1.5">
+          <WeaponTypeIcon type={weapon.type} className={cn('w-4 h-4', style.iconColor)} />
+          <span className="text-xs text-white/80 font-medium">{weapon.type}</span>
+        </div>
+        {/* 稀有度标签 */}
+        <div className="absolute top-2 right-2">
+          <span className={cn(
+            'text-[10px] px-1.5 py-0.5 rounded-full font-medium',
+            weapon.rarity >= 5 ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
+              : weapon.rarity >= 3 ? 'bg-purple-500/20 text-purple-400 border border-purple-500/30'
+              : 'bg-slate-500/20 text-slate-400 border border-slate-500/30'
+          )}>
+            {weapon.rarity}星
+          </span>
+        </div>
       </div>
 
       {/* 信息区域 */}
