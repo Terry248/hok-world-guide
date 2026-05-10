@@ -1,6 +1,8 @@
+import { notFound } from 'next/navigation';
 import { MessageBoard } from '@/components/community/message-board';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { MessageSquare } from 'lucide-react';
+import { FEATURES } from '@/lib/site-config';
 
 export const metadata = {
   title: '留言墙',
@@ -8,6 +10,10 @@ export const metadata = {
 };
 
 export default function CommunityPage() {
+  // 国内版备案期间隐藏留言墙
+  if (!FEATURES.community) {
+    notFound();
+  }
   return (
     <div className="relative">
       {/* Background */}

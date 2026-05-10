@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SITE_CONFIG } from '@/lib/constants';
+import { getSiteConfig } from '@/lib/constants';
 
 export function Footer() {
   return (
@@ -7,8 +7,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-primary font-bold mb-2">{SITE_CONFIG.title}</h3>
-            <p className="text-text-muted text-sm">{SITE_CONFIG.description}</p>
+            <h3 className="text-primary font-bold mb-2">{getSiteConfig().title}</h3>
+            <p className="text-text-muted text-sm">{getSiteConfig().description}</p>
             <div className="flex flex-wrap gap-3 mt-3 text-xs text-text-muted/70">
               <Link href="/privacy" className="hover:text-primary transition-colors">
                 隐私政策
@@ -24,7 +24,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-2">导航</h4>
             <div className="grid grid-cols-2 gap-1">
-              {SITE_CONFIG.nav.filter(n => n.href !== '/').map((item) => (
+              {getSiteConfig().nav.filter(n => n.href !== '/').map((item) => (
                 <Link key={item.href} href={item.href} className="text-sm text-text-muted hover:text-primary transition-colors">
                   {item.label}
                 </Link>

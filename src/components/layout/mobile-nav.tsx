@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, Sword } from 'lucide-react';
-import { SITE_CONFIG } from '@/lib/constants';
+import { getSiteConfig } from '@/lib/constants';
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -20,7 +20,7 @@ export function MobileNav() {
       {open && (
         <div className="md:hidden fixed inset-0 top-16 bg-background/95 backdrop-blur-lg z-40 animate-slide-up">
           <nav className="flex flex-col p-4 gap-1">
-            {SITE_CONFIG.nav.map((item) => (
+            {getSiteConfig().nav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}

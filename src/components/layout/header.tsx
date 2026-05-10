@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Sword, Search, Menu, X } from 'lucide-react';
-import { SITE_CONFIG } from '@/lib/constants';
+import { getSiteConfig } from '@/lib/constants';
 import { MobileNav } from './mobile-nav';
 
 export function Header() {
@@ -11,12 +11,12 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-primary hover:text-primary-hover transition-colors">
             <Sword className="w-6 h-6" />
-            <span className="font-bold text-lg hidden sm:inline">{SITE_CONFIG.title}</span>
+            <span className="font-bold text-lg hidden sm:inline">{getSiteConfig().title}</span>
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-1">
-            {SITE_CONFIG.nav.map((item) => (
+            {getSiteConfig().nav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}

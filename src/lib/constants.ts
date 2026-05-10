@@ -1,4 +1,5 @@
 import type { Element, CharacterRole, WeaponType, Rarity } from '@/types';
+import { FEATURES, IS_DOMESTIC } from './site-config';
 
 export const ELEMENTS: Element[] = ['火', '水', '风', '雷', '草', '冰', '岩', '光', '暗'];
 
@@ -24,10 +25,8 @@ export const CHEST_TYPES = ['普通', '精致', '珍贵', '华丽'] as const;
 
 export const QUEST_TYPES = ['主线', '支线', '活动', '隐藏'] as const;
 
-export const SITE_CONFIG = {
-  title: '王者荣耀世界攻略站',
-  description: '最全王者荣耀世界游戏攻略',
-  nav: [
+export function getSiteConfig() {
+  const baseNav = [
     { label: '首页', href: '/' },
     { label: '新手指南', href: '/beginner' },
     { label: '角色图鉴', href: '/characters' },
@@ -37,6 +36,16 @@ export const SITE_CONFIG = {
     { label: '任务攻略', href: '/quests' },
     { label: '战斗攻略', href: '/combat' },
     { label: '配队模拟', href: '/builder' },
-    { label: '留言墙', href: '/community' },
-  ],
-};
+  ];
+  
+  // 海外版才显示留言墙（国内版备案期间隐藏）
+  if (FEATURES.community) {
+    baseNav.push({ label: '留言墙', href: '/community' });
+  }
+  
+  return {
+    title: '王者荣耀世界攻略站',
+    description: '最全王者荣耀世界游戏攻略',
+    nav: baseNav,
+  };
+}
