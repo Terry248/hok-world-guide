@@ -37,6 +37,6 @@ export const SITE_CONFIG = {
     { label: '任务攻略', href: '/quests' },
     { label: '战斗攻略', href: '/combat' },
     { label: '配队模拟', href: '/builder' },
-    // { label: '留言墙', href: '/community' }, // 备案期间隐藏
+    { label: '留言墙', href: '/community' },
   ],
 };
