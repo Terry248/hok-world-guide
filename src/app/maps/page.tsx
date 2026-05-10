@@ -1,7 +1,13 @@
+import type { Metadata } from 'next';
 import { getAllRegions } from '@/lib/maps';
 import { RegionCard } from '@/components/maps/region-card';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Map } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '地图探索',
+  description: '王者荣耀世界五大区域地图探索指南，包含宝箱位置、传送点、收集品分布及子区域详细介绍',
+};
 
 export default function MapsPage() {
   const regions = getAllRegions();

@@ -1,7 +1,13 @@
+import type { Metadata } from 'next';
 import { getAllWeapons } from '@/lib/weapons';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Shield } from 'lucide-react';
 import { WeaponFilter } from '@/components/weapons/weapon-filter';
+
+export const metadata: Metadata = {
+  title: '武器大全',
+  description: '王者荣耀世界全武器图鉴，包含剑、弓、法杖、枪、锤等武器类型，基础攻击力、副属性及获取途径一览',
+};
 
 export default function WeaponsPage() {
   const weapons = getAllWeapons();

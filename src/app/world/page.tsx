@@ -1,8 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWorldData, getCharacterOrigin } from '@/lib/world';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Tabs } from '@/components/shared/tabs';
 import { Globe, MapPin, Star, Landmark, ExternalLink, ChevronRight, Sparkles, Compass } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '世界观',
+  description: '王者荣耀世界王者大陆世界观，九个大区、角色出身地及十二奇迹详细介绍',
+};
 
 export default function WorldPage() {
   const world = getWorldData();

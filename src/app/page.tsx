@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getFeaturedCharacters } from '@/lib/characters';
 import { getGuides, getQuests, getCombatGuides } from '@/lib/guides';
@@ -7,6 +8,11 @@ import { GuideCard } from '@/components/guides/guide-card';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { SearchAutocomplete } from '@/components/search/search-autocomplete';
 import { Sword, BookOpen, Map, Users, Shield, Compass, Globe, MessageSquare } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '首页',
+  description: '王者荣耀世界攻略站首页 - 最全游戏攻略资源，角色图鉴、武器大全、地图探索、任务攻略一键查询',
+};
 
 export default function HomePage() {
   const heroes = getFeaturedCharacters(6);

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Tabs } from '@/components/shared/tabs';
@@ -7,6 +8,11 @@ import {
   Clock, Trophy, Heart, ScrollText, Sparkles, Home,
   MessageCircle, Fish, Eye, Dna, GraduationCap, Mountain, Anchor
 } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '新手指南',
+  description: '王者荣耀世界新手指南，包含核心玩法介绍、共鸣系统、流脉系统、元素反应、五大区域探索及角色养成攻略',
+};
 
 export default function BeginnerPage() {
   return (

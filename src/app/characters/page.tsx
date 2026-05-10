@@ -1,7 +1,13 @@
+import type { Metadata } from 'next';
 import { getAllCharacters } from '@/lib/characters';
 import { CharacterFilter } from '@/components/characters/character-filter';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Sword } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '角色图鉴',
+  description: '王者荣耀世界全角色图鉴，包含11位英雄的技能介绍、属性数据、元素属性、武器类型及培养建议',
+};
 
 export default function CharactersPage() {
   const characters = getAllCharacters();

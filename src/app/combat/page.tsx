@@ -1,7 +1,13 @@
+import type { Metadata } from 'next';
 import { getCombatGuides } from '@/lib/guides';
 import { GuideListClient } from '@/components/guides/guide-list-client';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Swords } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '战斗攻略',
+  description: '王者荣耀世界战斗系统攻略，包含元素反应机制、角色培养优先级、BOSS打法及配队策略',
+};
 
 export default function CombatPage() {
   const guides = getCombatGuides();

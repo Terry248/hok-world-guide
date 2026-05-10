@@ -1,9 +1,15 @@
+import type { Metadata } from 'next';
 import { getAllCharacters } from '@/lib/characters';
 import { TeamSelectorClient } from '@/components/builder/team-selector-client';
 import { SynergyDisplay } from '@/components/builder/synergy-display';
 import { BuildPresets } from '@/components/builder/build-presets';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Users } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '配队模拟器',
+  description: '王者荣耀世界配队模拟器，支持4人队伍组建、元素共鸣计算、角色羁绊分析及预设阵容推荐',
+};
 
 export default function BuilderPage() {
   const characters = getAllCharacters();

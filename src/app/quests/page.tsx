@@ -1,7 +1,13 @@
+import type { Metadata } from 'next';
 import { getQuests } from '@/lib/guides';
 import { GuideListClient } from '@/components/guides/guide-list-client';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { BookOpen } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '任务攻略',
+  description: '王者荣耀世界任务流程攻略，包含主线剧情、支线任务、日常资源获取及世界探索指南',
+};
 
 export default function QuestsPage() {
   const quests = getQuests();
