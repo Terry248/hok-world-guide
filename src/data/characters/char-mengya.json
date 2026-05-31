@@ -1,0 +1,129 @@
+{
+  "id": "char-mengya",
+  "name": "蒙犽",
+  "title": "火力全开",
+  "element": "火",
+  "weaponType": "弓",
+  "rarity": 5,
+  "role": "输出",
+  "avatar": "/images/characters/meng-ya.jpg",
+  "stats": {
+    "hp": 9500,
+    "attack": 370,
+    "defense": 140,
+    "speed": 320,
+    "critRate": 12.0,
+    "critDamage": 60.0
+  },
+  "skills": [
+    {
+      "name": "速射弹",
+      "type": "普攻",
+      "description": "使用速射弹模式进行快速射击，命中积攒热度值和兴奋值。可切换至榴弹模式消耗热度值造成范围火元素伤害。",
+      "multipliers": [
+        0.4,
+        0.4,
+        0.4,
+        0.6
+      ]
+    },
+    {
+      "name": "炽焰打击",
+      "type": "战技",
+      "description": "持续火力输出核心技能，向前方扇形区域扫射，造成大量火元素伤害。兴奋状态下弹道数量和伤害均提升。",
+      "multipliers": [
+        2.5
+      ]
+    },
+    {
+      "name": "狂轰滥炸",
+      "type": "战技",
+      "description": "榴弹模式核心技能。发射榴弹对目标区域造成范围伤害，完美时机连射可额外发射飞弹。消耗热度值越高伤害越高。",
+      "multipliers": [
+        2.0
+      ]
+    },
+    {
+      "name": "火力全开",
+      "type": "终结技",
+      "description": "进入「兴奋状态」，所有技能获得强化，攻速大幅提升，榴弹模式可额外发射飞弹。期间持续射击造成毁灭性火元素伤害，持续12秒。",
+      "multipliers": [
+        1.5
+      ]
+    },
+    {
+      "name": "兴奋状态",
+      "type": "天赋",
+      "description": "当炽怒/兴奋值满时，蒙犽进入兴奋状态，强化所有技能并获得冷却缩减。兴奋期间榴弹完美时机连射可额外发射飞弹。火力输出定位，是团队的核心DPS。"
+    },
+    {
+      "name": "共鸣飞行",
+      "type": "秘技",
+      "description": "在地图上使用时，启动飞行装置升空，快速移动一段距离。"
+    }
+  ],
+  "constellations": [
+    {
+      "level": 1,
+      "name": "速射",
+      "description": "速射弹模式的攻速提升15%"
+    },
+    {
+      "level": 2,
+      "name": "榴弹",
+      "description": "榴弹模式范围伤害提升30%"
+    },
+    {
+      "level": 3,
+      "name": "炽焰",
+      "description": "炽焰打击技能等级+3"
+    },
+    {
+      "level": 4,
+      "name": "全开",
+      "description": "火力全开的持续时间延长至15秒"
+    },
+    {
+      "level": 5,
+      "name": "轰炸",
+      "description": "终结技技能等级+3"
+    },
+    {
+      "level": 6,
+      "name": "完美时机",
+      "description": "兴奋状态下，榴弹完美时机额外飞弹数量+1"
+    }
+  ],
+  "recommendedWeapons": [
+    "wp-005",
+    "wp-003"
+  ],
+  "recommendedTeams": [
+    [
+      "char-yuanliu",
+      "char-xishi",
+      "char-sunbin"
+    ],
+    [
+      "char-dongfangyao",
+      "char-wangzhaojun",
+      "char-lubanmaster"
+    ]
+  ],
+  "ascensionMaterials": [
+    {
+      "name": "火焰精华",
+      "count": 46
+    },
+    {
+      "name": "弹壳碎片",
+      "count": 20
+    },
+    {
+      "name": "火力芯片",
+      "count": 18
+    }
+  ],
+  "lore": "蒙犽，天才火力手，称号「火力全开」。在王者荣耀世界中，蒙犽定位为强攻类火力输出角色。他拥有独特的双形态武器切换机制——速射弹和榴弹，依赖「热度」与「兴奋值」系统进行战斗。他是远程压制和火力覆盖的专家，搭配孙膑可延长破势时间偷输出，搭配鲁班大师时伤害最高。其兴奋状态下的爆发能力是游戏中最强大的持续输出之一。",
+  "description": "星之队的团霸兼火药，制炮高手。脾气像他的火炮一样会'不点自燃'。"
+}

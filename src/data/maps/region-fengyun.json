@@ -1,0 +1,43 @@
+{
+  "id": "region-fengyun",
+  "name": "织梦原野",
+  "description": "丰云野背靠观星群山、稷下前山，是学子下乡实践的天然田野。传说丰云钟声一响，考试就能顺利通过！",
+  "locations": [
+    {
+      "id": "loc-fengyun",
+      "name": "丰云野",
+      "description": "丰云野背靠观星群山、稷下前山，是学子下乡实践的天然田野。传说丰云钟声一响，考试就能顺利通过！",
+      "image": "/images/maps/fengyun-ye.jpg"
+    },
+    {
+      "id": "loc-zhimeng",
+      "name": "织梦原",
+      "description": "学子与稷下居民的田园牧歌之地，每当丰收庆典便在此欢聚。",
+      "image": "/images/maps/map2_1.png"
+    },
+    {
+      "id": "loc-jiebei",
+      "name": "界北",
+      "description": "既是稷下重要的商业物流枢纽，也是充满烟火气息的生活中心。",
+      "image": "/images/maps/map2_2.png"
+    }
+  ],
+  "chests": [
+    { "id": "chest-fy-001", "type": "珍贵", "location": "丰云钟塔顶层，敲响大钟后出现" },
+    { "id": "chest-fy-002", "type": "精致", "location": "观星台遗址石柱之间" },
+    { "id": "chest-fy-003", "type": "精致", "location": "溪谷瀑布后方洞穴" },
+    { "id": "chest-fy-004", "type": "普通", "location": "农田稻草堆旁" },
+    { "id": "chest-fy-005", "type": "普通", "location": "村口老槐树树洞" },
+    { "id": "chest-fy-006", "type": "普通", "location": "山间断桥下方" }
+  ],
+  "waypoints": [
+    { "id": "wp-fy-001", "name": "丰云村口", "location": "进入丰云野的主入口" },
+    { "id": "wp-fy-002", "name": "钟塔", "location": "丰云野制高点" },
+    { "id": "wp-fy-003", "name": "溪谷", "location": "丰云野东侧峡谷" }
+  ],
+  "collectibles": [
+    { "name": "丰云草药", "count": 20, "locations": ["田野间", "山脚草丛"] },
+    { "name": "古观星图", "count": 3, "locations": ["观星台遗址"] },
+    { "name": "农家藏品", "count": 8, "locations": ["村中民居"] }
+  ]
+}

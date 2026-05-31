@@ -1,0 +1,65 @@
+{
+  "id": "char-yuanliu",
+  "name": "元流之子",
+  "title": "源流之子",
+  "element": "光",
+  "weaponType": "剑",
+  "rarity": 5,
+  "role": "输出",
+  "avatar": "/images/characters/yuanliu.jpg",
+  "description": "失去过往记忆的稷下新生，故事的主角，游历世界的旅者，玩家的化身。",
+  "stats": {
+    "hp": 12000,
+    "attack": 320,
+    "defense": 200,
+    "speed": 300,
+    "critRate": 5.0,
+    "critDamage": 50.0
+  },
+  "skills": [
+    {
+      "name": "万物为流",
+      "type": "普攻",
+      "description": "连续攻击汇集「流」能量，汇集满5层「流」后可减少50%其他技能冷却，并获得大量生命回复。作为主角的基础攻击方式，可根据共鸣系统切换不同战斗风格。",
+      "multipliers": [0.7, 0.7, 1.0]
+    },
+    {
+      "name": "倾注一击",
+      "type": "战技",
+      "description": "释放能量波对前方敌人造成多段光元素伤害。根据当前共鸣英雄的不同，战技效果也会随之变化，可切换为流转轮或流冲枪形态。",
+      "multipliers": [1.8]
+    },
+    {
+      "name": "万妙之法",
+      "type": "终结技",
+      "description": "释放源流之力的全部潜能，对大范围敌人造成毁灭性光元素伤害。汇流为一机制触发后，觉醒期间全属性大幅提升，技能效果取决于共鸣的英雄。",
+      "multipliers": [2.5]
+    },
+    {
+      "name": "汇流为一",
+      "type": "天赋",
+      "description": "核心机制。通过连续命中敌人积累「流」能量，流能量满后进入汇流状态，减少50%技能冷却并获得5层流能量，大幅提升战斗效率。与队友中的共鸣英雄产生羁绊，获得额外属性加成。"
+    },
+    {
+      "name": "流转轮",
+      "type": "秘技",
+      "description": "双段式技能，第一段造成范围光元素伤害，第二段可触发后撤打击并回复生命值。在地图上使用时可用于快速位移。"
+    }
+  ],
+  "constellations": [
+    { "level": 1, "name": "源流初醒", "description": "万物为流的汇集速度提升，获得「流」所需命中次数减少1次" },
+    { "level": 2, "name": "共鸣链接", "description": "汇流为一状态下的属性加成提升25%" },
+    { "level": 3, "name": "倾注", "description": "倾注一击技能等级+3" },
+    { "level": 4, "name": "觉醒强化", "description": "万妙之法的持续时间延长3秒" },
+    { "level": 5, "name": "万妙", "description": "终结技技能等级+3" },
+    { "level": 6, "name": "万物源流", "description": "汇流状态下，所有技能附带额外光元素溅射伤害，且冷却缩减效果提升至60%" }
+  ],
+  "recommendedWeapons": ["wp-003", "wp-001"],
+  "recommendedTeams": [["char-dongfangyao", "char-xishi", "char-mengya"], ["char-kai", "char-xishi", "char-sunbin"]],
+  "ascensionMaterials": [
+    { "name": "源流结晶", "count": 46 },
+    { "name": "光之碎片", "count": 20 },
+    { "name": "共鸣之石", "count": 18 }
+  ],
+  "lore": "元流之子，拥有感知和操控源流之力的特殊体质。作为王者荣耀世界中的主角，玩家可以通过「共鸣系统」与不同的英雄建立羁绊，获得他们的力量和能力。元流之子的战斗风格灵活多变，汇集「流」能量后可减少大量技能冷却，可根据队伍需要切换角色定位。其独特的「汇流为一」机制是游戏的核心战斗系统之一，通过持续战斗积累能量并进入强化状态。"
+}

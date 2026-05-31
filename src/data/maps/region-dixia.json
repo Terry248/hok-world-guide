@@ -1,0 +1,39 @@
+{
+  "id": "region-dixia",
+  "name": "地下世界",
+  "description": "在稷下的土地之下，深藏着数个不为人知的庞大空间。深邃的溶洞、青铜的巨兽与沉寂的遗迹，它们讲述着一段段被时光尘封的谜语，静候探索者的脚步。",
+  "locations": [
+    {
+      "id": "loc-dixia",
+      "name": "地下世界",
+      "description": "在稷下的土地之下，深藏着数个不为人知的庞大空间。深邃的溶洞、青铜的巨兽与沉寂的遗迹，它们讲述着一段段被时光尘封的谜语，静候探索者的脚步。",
+      "image": "/images/maps/dixia-shijie.jpg"
+    },
+    {
+      "id": "loc-tianzhu",
+      "name": "天柱墟",
+      "description": "埋葬于地下的巨大溶洞，由巨大的柱体支撑洞穴穹顶，辉煌的青铜建筑静默诉说着逝去的文明。",
+      "image": "/images/maps/map5_1.jpg"
+    }
+  ],
+  "chests": [
+    { "id": "chest-dx-001", "type": "华丽", "location": "青铜巨兽口中，需解开机关谜题后开启" },
+    { "id": "chest-dx-002", "type": "珍贵", "location": "溶洞深处水晶簇中央" },
+    { "id": "chest-dx-003", "type": "珍贵", "location": "遗迹密室，击败守护者后解锁" },
+    { "id": "chest-dx-004", "type": "精致", "location": "地下暗河尽头瀑布后方" },
+    { "id": "chest-dx-005", "type": "精致", "location": "青铜祭坛底座暗格" },
+    { "id": "chest-dx-006", "type": "普通", "location": "溶洞入口处岩壁裂缝" },
+    { "id": "chest-dx-007", "type": "普通", "location": "地下通道转角石堆后" },
+    { "id": "chest-dx-008", "type": "普通", "location": "遗迹断墙废墟中" }
+  ],
+  "waypoints": [
+    { "id": "wp-dx-001", "name": "地下入口", "location": "稷下后山隐蔽洞口" },
+    { "id": "wp-dx-002", "name": "溶洞大厅", "location": "地下世界中央区域" },
+    { "id": "wp-dx-003", "name": "青铜遗迹", "location": "地下深处古文明遗址" }
+  ],
+  "collectibles": [
+    { "name": "青铜残片", "count": 15, "locations": ["遗迹各处"] },
+    { "name": "溶洞晶石", "count": 20, "locations": ["溶洞水晶簇旁"] },
+    { "name": "古代铭文", "count": 8, "locations": ["遗迹墙壁"] }
+  ]
+}

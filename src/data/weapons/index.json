@@ -1,0 +1,374 @@
+[
+  {
+    "id": "wp-001",
+    "name": "寒星剑",
+    "type": "剑",
+    "rarity": 2,
+    "baseAtk": [26, 276],
+    "subStat": { "name": "暴击率", "values": [4.6, 18.4] },
+    "passive": {
+      "name": "寒星",
+      "description": "攻击速度提升，每秒可达5次攻击。满10点剑气时触发6秒强化状态，攻击力提升。",
+      "refineEffects": ["攻击力+8%", "攻击力+12%", "攻击力+16%", "攻击力+20%", "攻击力+24%"]
+    },
+    "icon": "/images/weapons/hanxing-jian.png",
+    "description": "新手入门武器，黑蓝双色科技风格，简约而实用。高频输出特性使其成为新手过渡的最佳选择。",
+    "obtainMethod": "26级主线任务获取"
+  },
+  {
+    "id": "wp-002",
+    "name": "辉星剑",
+    "type": "剑",
+    "rarity": 4,
+    "baseAtk": [42, 510],
+    "subStat": { "name": "攻击力%", "values": [9.0, 27.6] },
+    "passive": {
+      "name": "辉煌",
+      "description": "挥动时带有星光特效，攻击附带额外光元素溅射伤害。辉煌特效下伤害加成提升。",
+      "refineEffects": ["溅射伤害+10%", "溅射伤害+15%", "溅射伤害+20%", "溅射伤害+25%", "溅射伤害+30%"]
+    },
+    "icon": "/images/weapons/huixing-jian.png",
+    "description": "寒星剑的进阶款，科技风搭配鎏金纹路，挥动时带有华丽的星光特效。中期进阶武器的首选。",
+    "obtainMethod": "16级解锁，武器突破获得"
+  },
+  {
+    "id": "wp-003",
+    "name": "破魔长剑",
+    "type": "剑",
+    "rarity": 5,
+    "baseAtk": [48, 608],
+    "subStat": { "name": "攻击力%", "values": [9.0, 33.1] },
+    "passive": {
+      "name": "破魔",
+      "description": "对处于元素反应状态的敌人，伤害提升24%。",
+      "refineEffects": ["伤害+24%", "伤害+30%", "伤害+36%", "伤害+42%", "伤害+48%"]
+    },
+    "icon": "/images/weapons/pomo-jian.png",
+    "description": "高阶长剑，专为克制元素反应状态的敌人而设计。对带盾或附魔的敌人有极强克制作用。",
+    "obtainMethod": "奇境副本掉落 / 武器锻造"
+  },
+  {
+    "id": "wp-004",
+    "name": "龙胆亮银枪",
+    "type": "枪",
+    "rarity": 5,
+    "baseAtk": [48, 608],
+    "subStat": { "name": "暴击率", "values": [6.0, 27.6] },
+    "passive": {
+      "name": "龙胆",
+      "description": "攻击力提升12%。释放技能后，移动速度提升8%，持续6秒。",
+      "refineEffects": ["攻击力提升12%", "攻击力提升16%", "攻击力提升20%", "攻击力提升24%", "攻击力提升28%"]
+    },
+    "icon": "/images/weapons/longdan-qiang.png",
+    "description": "经典长枪武器，银色枪身附带龙胆纹路。释放技能后获得移速加成，适合团战快速切入。",
+    "obtainMethod": "灾兽共斗副本掉落 / 武器锻造"
+  },
+  {
+    "id": "wp-005",
+    "name": "穿云弓",
+    "type": "弓",
+    "rarity": 4,
+    "baseAtk": [41, 401],
+    "subStat": { "name": "攻击力%", "values": [9.0, 27.6] },
+    "passive": {
+      "name": "穿云",
+      "description": "攻击速度提升10%。命中敌人弱点时，额外造成一次物理伤害。",
+      "refineEffects": ["攻速+10%", "攻速+12.5%", "攻速+15%", "攻速+17.5%", "攻速+20%"]
+    },
+    "icon": "/images/weapons/chuanyun-gong.png",
+    "description": "中距离弓箭，适合远程消耗和放风筝战术。命中弱点时触发额外伤害，对操作要求较高。",
+    "obtainMethod": "主线任务奖励 / 武器锻造"
+  },
+  {
+    "id": "wp-006",
+    "name": "月华法杖",
+    "type": "法杖",
+    "rarity": 5,
+    "baseAtk": [42, 510],
+    "subStat": { "name": "元素精通", "values": [48, 198] },
+    "passive": {
+      "name": "月华",
+      "description": "元素反应伤害提升16%。施放技能后，全队元素精通提升60点，持续12秒。",
+      "refineEffects": ["反应伤害+16%", "反应伤害+20%", "反应伤害+24%", "反应伤害+28%", "反应伤害+32%"]
+    },
+    "icon": "/images/weapons/yuehua-fazhang.png",
+    "description": "法师专属武器，月光主题法杖。提升全队元素精通，是元素队的核心装备。",
+    "obtainMethod": "奇境副本掉落"
+  },
+  {
+    "id": "wp-007",
+    "name": "碎星锤",
+    "type": "锤",
+    "rarity": 5,
+    "baseAtk": [50, 620],
+    "subStat": { "name": "暴击伤害", "values": [8.0, 36.8] },
+    "passive": {
+      "name": "碎星",
+      "description": "锤击有概率击晕敌人1.5秒。范围攻击伤害提升20%，对群体敌人效果显著。",
+      "refineEffects": ["范围伤害+20%", "范围伤害+25%", "范围伤害+30%", "范围伤害+35%", "范围伤害+40%"]
+    },
+    "icon": "/images/weapons/suixing-chui.png",
+    "description": "重型锤类武器，侧重范围控制与群体伤害。锤击附带击晕效果，强力打击感。",
+    "obtainMethod": "灾兽共斗副本掉落 / 武器锻造"
+  },
+  {
+    "id": "wp-008",
+    "name": "翠玉盾",
+    "type": "盾",
+    "rarity": 4,
+    "baseAtk": [34, 311],
+    "subStat": { "name": "防御力%", "values": [10.8, 33.1] },
+    "passive": {
+      "name": "翠玉",
+      "description": "受到攻击时，在周围生成护盾，吸收伤害量为防御力的40%。",
+      "refineEffects": ["吸收40%", "吸收50%", "吸收60%", "吸收70%", "吸收80%"]
+    },
+    "icon": "/images/weapons/cuiyu-dun.png",
+    "description": "防御型盾牌，受到攻击时自动生成护盾。坦克角色的核心装备，有效提升团队生存能力。",
+    "obtainMethod": "主线任务奖励 / 武器锻造"
+  },
+  {
+    "id": "wp-009",
+    "name": "秋云归寂",
+    "type": "剑",
+    "rarity": 5,
+    "baseAtk": [52, 640],
+    "subStat": { "name": "暴击率", "values": [8.0, 32.0] },
+    "passive": {
+      "name": "秋云",
+      "description": "攻击附带古风机甲风格特效，对敌人造成额外暗元素伤害。收藏级别武器，全属性加成。",
+      "refineEffects": ["暗元素伤害+15%", "暗元素伤害+20%", "暗元素伤害+25%", "暗元素伤害+30%", "暗元素伤害+35%"]
+    },
+    "icon": "/images/weapons/qiuyun-guiji.png",
+    "description": "皮肤专属武器，古风机甲风格融合设计，造型大气。收藏级别武器，全属性均有加成。",
+    "obtainMethod": "皮肤专属获取"
+  },
+  {
+    "id": "wp-010",
+    "name": "落星双刃",
+    "type": "双刀",
+    "rarity": 5,
+    "baseAtk": [42, 510],
+    "subStat": { "name": "暴击伤害", "values": [8.0, 36.8] },
+    "passive": {
+      "name": "落星",
+      "description": "风元素伤害加成提升20%。击败敌人后回复8%生命值。",
+      "refineEffects": ["风元素伤害+20%", "风元素伤害+25%", "风元素伤害+30%", "风元素伤害+35%", "风元素伤害+40%"]
+    },
+    "icon": "/images/weapons/luoxing-shuangdao.png",
+    "description": "双持刃类武器，风元素主题。击败敌人后自动回复生命值，具备一定续航能力。",
+    "obtainMethod": "奇境副本掉落"
+  },
+  {
+    "id": "wp-011",
+    "name": "铁剑",
+    "type": "剑",
+    "rarity": 2,
+    "baseAtk": [23, 276],
+    "icon": "/images/weapons/tie-jian.png",
+    "description": "基础铁剑，新手起始武器。属性较低但易于获取，适合初期过渡。",
+    "obtainMethod": "初始装备"
+  },
+  {
+    "id": "wp-012",
+    "name": "新手长弓",
+    "type": "弓",
+    "rarity": 1,
+    "baseAtk": [21, 204],
+    "icon": "/images/weapons/xinshou-gong.png",
+    "description": "最基础的长弓，初始装备。属性最低，仅用于新手教学阶段。",
+    "obtainMethod": "初始装备"
+  },
+  {
+    "id": "wp-013",
+    "name": "破晓轮刃",
+    "type": "轮",
+    "rarity": 4,
+    "baseAtk": [38, 380],
+    "subStat": { "name": "攻击速度", "values": [5.0, 20.0] },
+    "passive": {
+      "name": "破晓",
+      "description": "投掷轮刃后可在飞行路径上持续造成伤害，返回时伤害翻倍。",
+      "refineEffects": ["持续伤害+10%", "持续伤害+15%", "持续伤害+20%", "持续伤害+25%", "持续伤害+30%"]
+    },
+    "icon": "/images/weapons/poxiao-lunren.png",
+    "description": "特殊轮类武器，投掷后在飞行路径上造成伤害。适合中距离牵制和范围输出。",
+    "obtainMethod": "主线任务奖励"
+  },
+  {
+    "id": "wp-014",
+    "name": "裂地战斧",
+    "type": "斧",
+    "rarity": 4,
+    "baseAtk": [44, 450],
+    "subStat": { "name": "暴击率", "values": [6.0, 24.0] },
+    "passive": {
+      "name": "裂地",
+      "description": "重击攻击有概率造成范围震地效果，击倒周围敌人并减速。",
+      "refineEffects": ["震地范围+10%", "震地范围+15%", "震地范围+20%", "震地范围+25%", "震地范围+30%"]
+    },
+    "icon": "/images/weapons/liezhi-zhanfu.png",
+    "description": "重型战斧，强调范围控制和击倒效果。重击可震地击倒，适合团战开场控制。",
+    "obtainMethod": "灾兽共斗副本掉落"
+  },
+  {
+    "id": "wp-015",
+    "name": "诗仙剑",
+    "type": "剑",
+    "rarity": 5,
+    "baseAtk": [50, 620],
+    "subStat": { "name": "元素精通", "values": [48, 220] },
+    "passive": {
+      "name": "侠客行",
+      "description": "每次攻击积累1层剑气，满3层进入「侠客行」状态，攻击附带冰霜剑气，造成额外冰元素范围伤害。",
+      "refineEffects": ["剑气伤害+15%", "剑气伤害+20%", "剑气伤害+25%", "剑气伤害+30%", "剑气伤害+40%"]
+    },
+    "icon": "/images/weapons/shixian-jian.png",
+    "description": "李白专属武器，剑身刻有诗句纹路。挥剑时带有诗意特效，仙气飘逸。侠客行状态下攻击附带冰元素AOE。",
+    "obtainMethod": "李白共鸣武器 / 奇境副本掉落"
+  },
+  {
+    "id": "wp-016",
+    "name": "风暴令牌",
+    "type": "轮",
+    "rarity": 5,
+    "baseAtk": [46, 560],
+    "subStat": { "name": "攻击力%", "values": [9.0, 33.1] },
+    "passive": {
+      "name": "迅捷",
+      "description": "攻击命中时叠加1层迅捷效果（持续5秒，最多10层），每层提升2%攻击速度和移速。满层后普攻附带闪电链效果。",
+      "refineEffects": ["攻速+2%/层", "攻速+2.5%/层", "攻速+3%/层", "攻速+3.5%/层", "攻速+4%/层"]
+    },
+    "icon": "/images/weapons/fengbao-lingpai.png",
+    "description": "狄仁杰专属武器，治安官令牌造型。投掷出去后自动返回，命中附带雷电特效。",
+    "obtainMethod": "狄仁杰共鸣武器 / 主线任务奖励"
+  },
+  {
+    "id": "wp-017",
+    "name": "女帝权杖",
+    "type": "法杖",
+    "rarity": 5,
+    "baseAtk": [54, 650],
+    "subStat": { "name": "攻击力%", "values": [12.0, 38.0] },
+    "passive": {
+      "name": "生杀予夺",
+      "description": "技能范围提升20%。终结技可全图释放（对BOSS伤害减半）。全队光元素伤害提升15%。",
+      "refineEffects": ["光元素伤害+15%", "光元素伤害+18%", "光元素伤害+22%", "光元素伤害+26%", "光元素伤害+30%"]
+    },
+    "icon": "/images/weapons/nudi-quanzhang.png",
+    "description": "武则天专属武器，金色权杖顶端镶嵌光元素宝石。释放技能时带有帝王威压特效，气势磅礴。",
+    "obtainMethod": "武则天共鸣武器 / 长安城隐藏任务"
+  },
+  {
+    "id": "wp-018",
+    "name": "鲨刃",
+    "type": "双刀",
+    "rarity": 5,
+    "baseAtk": [44, 540],
+    "subStat": { "name": "暴击率", "values": [8.0, 32.0] },
+    "passive": {
+      "name": "鲨猎",
+      "description": "生命值低于30%时触发「破浪」状态，移动速度提升30%，攻击附带暗元素撕裂伤害，持续8秒。",
+      "refineEffects": ["撕裂伤害+20%", "撕裂伤害+25%", "撕裂伤害+30%", "撕裂伤害+35%", "撕裂伤害+40%"]
+    },
+    "icon": "/images/weapons/sha-ren.png",
+    "description": "澜专属武器，鲨鱼造型双刃。低血量时自动触发破浪状态，暗元素特效环绕刀身。",
+    "obtainMethod": "澜共鸣武器 / 周本掉落"
+  },
+  {
+    "id": "wp-019",
+    "name": "魅惑之心",
+    "type": "法杖",
+    "rarity": 5,
+    "baseAtk": [44, 530],
+    "subStat": { "name": "元素精通", "values": [56, 230] },
+    "passive": {
+      "name": "女王崇拜",
+      "description": "技能命中有概率使敌人陷入「魅惑」状态，持续2秒。魅惑期间敌人攻击队友的概率降低50%。",
+      "refineEffects": ["魅惑持续2秒", "魅惑持续2.5秒", "魅惑持续3秒", "魅惑持续3.5秒", "魅惑持续4秒"]
+    },
+    "icon": "/images/weapons/meihuo-zhixin.png",
+    "description": "妲己专属武器，暗紫色法杖顶端镶嵌狐形宝石。释放技能时带有粉色魅惑特效，妖艳而危险。",
+    "obtainMethod": "妲己共鸣武器 / 三分之地隐藏任务"
+  },
+  {
+    "id": "wp-020",
+    "name": "烈风之弓",
+    "type": "弓",
+    "rarity": 5,
+    "baseAtk": [46, 550],
+    "subStat": { "name": "暴击率", "values": [8.0, 32.0] },
+    "passive": {
+      "name": "守望者",
+      "description": "长弓状态下暴击率提升15%。暴击后额外射出一支追踪箭，造成风元素伤害。击杀敌人后3秒内攻速提升30%。",
+      "refineEffects": ["追踪箭伤害+20%", "追踪箭伤害+25%", "追踪箭伤害+30%", "追踪箭伤害+35%", "追踪箭伤害+40%"]
+    },
+    "icon": "/images/weapons/liefeng-zhigong.png",
+    "description": "伽罗长弓形态专属武器，弓身附带风元素流转特效。精准射击时可自动锁定敌人弱点。",
+    "obtainMethod": "伽罗共鸣武器 / 奇境副本掉落"
+  },
+  {
+    "id": "wp-021",
+    "name": "时光沙漏",
+    "type": "法杖",
+    "rarity": 4,
+    "baseAtk": [38, 400],
+    "subStat": { "name": "元素精通", "values": [40, 160] },
+    "passive": {
+      "name": "时光回溯",
+      "description": "二技能释放后，3秒内受到治疗的队友可将期间受到伤害的20%转化为治疗量。",
+      "refineEffects": ["转化20%", "转化25%", "转化30%", "转化35%", "转化40%"]
+    },
+    "icon": "/images/weapons/shiguang-shalou.png",
+    "description": "孙膑专属辅助武器，沙漏中流转着金色时光之沙。释放技能时周围出现时光波纹。",
+    "obtainMethod": "孙膑共鸣武器 / 主线奖励"
+  },
+  {
+    "id": "wp-022",
+    "name": "青莲剑",
+    "type": "剑",
+    "rarity": 3,
+    "baseAtk": [34, 340],
+    "subStat": { "name": "暴击率", "values": [5.0, 20.0] },
+    "passive": {
+      "name": "青莲剑气",
+      "description": "攻击附带莲花剑气特效，每第三次攻击释放一道莲花剑气，对前方扇形区域造成冰元素伤害。",
+      "refineEffects": ["剑气伤害+10%", "剑气伤害+15%", "剑气伤害+20%", "剑气伤害+25%", "剑气伤害+30%"]
+    },
+    "icon": "/images/weapons/qinglian-jian.png",
+    "description": "青莲剑仙风格长剑，剑身青绿如玉。挥动时带有莲花轨迹特效，飘逸灵动。",
+    "obtainMethod": "副本掉落 / 武器锻造"
+  },
+  {
+    "id": "wp-023",
+    "name": "重明火铳",
+    "type": "枪",
+    "rarity": 5,
+    "baseAtk": [50, 610],
+    "subStat": { "name": "暴击伤害", "values": [10.0, 40.0] },
+    "passive": {
+      "name": "爆裂",
+      "description": "蓄力射击造成300%伤害时，在命中位置产生火元素爆炸，对周围敌人造成溅射伤害。",
+      "refineEffects": ["溅射伤害+15%", "溅射伤害+20%", "溅射伤害+25%", "溅射伤害+30%", "溅射伤害+40%"]
+    },
+    "icon": "/images/weapons/chongming-huochong.png",
+    "description": "蒙犽专属武器，火铳造型粗犷霸气。蓄力射击附带爆裂特效，适合远程AOE输出。",
+    "obtainMethod": "蒙犽共鸣武器 / 灾兽共斗"
+  },
+  {
+    "id": "wp-024",
+    "name": "冰晶盾",
+    "type": "盾",
+    "rarity": 5,
+    "baseAtk": [38, 420],
+    "subStat": { "name": "防御力%", "values": [14.4, 42.0] },
+    "passive": {
+      "name": "冰甲",
+      "description": "受到攻击时在周围生成冰甲护盾，吸收伤害量为防御力的50%。护盾存在期间，对近战攻击者施加减速效果。",
+      "refineEffects": ["吸收50%", "吸收60%", "吸收70%", "吸收80%", "吸收100%"]
+    },
+    "icon": "/images/weapons/bingjing-dun.png",
+    "description": "重型冰元素盾牌，盾面由冰晶凝结而成。受到攻击时自动生成冰甲护盾，坦克核心装备。",
+    "obtainMethod": "周本掉落 / 武器锻造"
+  }
+]

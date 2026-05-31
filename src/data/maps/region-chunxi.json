@@ -1,0 +1,37 @@
+{
+  "id": "region-chunxi",
+  "name": "春溪漫滩",
+  "description": "这里是稷下门户，各地学子在百鸣港登陆稷下，在溯洄营地开始自己的入学考试。这里也是昔日古战场，残留的遗迹成为了初级学子的试炼之地。",
+  "locations": [
+    {
+      "id": "loc-chunxi",
+      "name": "春溪漫滩",
+      "description": "这里是稷下门户，各地学子在百鸣港登陆稷下，在溯洄营地开始自己的入学考试。这里也是昔日古战场，残留的遗迹成为了初级学子的试炼之地。",
+      "image": "/images/maps/chunxi-mantan.jpg"
+    },
+    {
+      "id": "loc-chunxiyuan",
+      "name": "春溪原",
+      "description": "无边原野和古老遗迹，皆萦绕在稷下学子活跃的气氛中。",
+      "image": "/images/maps/map3_1.jpg"
+    }
+  ],
+  "chests": [
+    { "id": "chest-cx-001", "type": "珍贵", "location": "古战场遗址中央祭坛，击败守护者后解锁" },
+    { "id": "chest-cx-002", "type": "精致", "location": "百鸣港灯塔顶层" },
+    { "id": "chest-cx-003", "type": "精致", "location": "溯洄营地帐篷区后方岩壁" },
+    { "id": "chest-cx-004", "type": "普通", "location": "浅滩芦苇丛中" },
+    { "id": "chest-cx-005", "type": "普通", "location": "旧码头沉船残骸中" },
+    { "id": "chest-cx-006", "type": "普通", "location": "古战场残破城墙夹缝" }
+  ],
+  "waypoints": [
+    { "id": "wp-cx-001", "name": "百鸣港", "location": "稷下门户港口" },
+    { "id": "wp-cx-002", "name": "溯洄营地", "location": "入学考试起点" },
+    { "id": "wp-cx-003", "name": "古战场", "location": "昔日战场遗址" }
+  ],
+  "collectibles": [
+    { "name": "入学令牌", "count": 10, "locations": ["溯洄营地各处"] },
+    { "name": "古战场遗物", "count": 12, "locations": ["战场遗址各处"] },
+    { "name": "港口特产", "count": 8, "locations": ["百鸣港商铺"] }
+  ]
+}

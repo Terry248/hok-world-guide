@@ -1,0 +1,126 @@
+[
+  {
+    "id": "region-jixia",
+    "name": "稷下群山",
+    "description": "稷下学院传奇求学圣地，三大学院环通天塔而建。学风浓郁，百态鲜活。以流云筑造设施，巧思实用，助力研学与生活。",
+    "coverImage": "/images/maps/jixia-xueyuan.jpg",
+    "locations": [
+      {
+        "id": "loc-jixia-xueyuan",
+        "name": "稷下学院",
+        "description": "传奇求学圣地，三大学院环通天塔而建。学风浓郁，百态鲜活。以流云筑造设施，巧思实用，助力研学与生活。",
+        "image": "/images/maps/jixia-xueyuan.jpg"
+      },
+      {
+        "id": "loc-guanxing",
+        "name": "观星群山",
+        "description": "视野广阔的群山，观星台修筑于此，月升时分星象清晰。",
+        "image": "/images/maps/map1_2.jpg"
+      },
+      {
+        "id": "loc-qimen",
+        "name": "奇门秘境",
+        "description": "坐落着诸葛亮毕业大作奇门水榭的秘境溪谷，清幽之下，潜藏玄机奥妙。",
+        "image": "/images/maps/map1_3.png"
+      },
+      {
+        "id": "loc-mijin",
+        "name": "秘禁之地",
+        "description": "神秘危险的秘禁阁坐落于此，森严守备却不能阻止学子们的好奇心。",
+        "image": "/images/maps/map1_4.png"
+      }
+    ]
+  },
+  {
+    "id": "region-fengyun",
+    "name": "织梦原野",
+    "description": "丰云野背靠观星群山、稷下前山，是学子下乡实践的天然田野。传说丰云钟声一响，考试就能顺利通过！",
+    "coverImage": "/images/maps/fengyun-ye.jpg",
+    "locations": [
+      {
+        "id": "loc-fengyun",
+        "name": "丰云野",
+        "description": "丰云野背靠观星群山、稷下前山，是学子下乡实践的天然田野。传说丰云钟声一响，考试就能顺利通过！",
+        "image": "/images/maps/fengyun-ye.jpg"
+      },
+      {
+        "id": "loc-zhimeng",
+        "name": "织梦原",
+        "description": "学子与稷下居民的田园牧歌之地，每当丰收庆典便在此欢聚。",
+        "image": "/images/maps/map2_1.png"
+      },
+      {
+        "id": "loc-jiebei",
+        "name": "界北",
+        "description": "既是稷下重要的商业物流枢纽，也是充满烟火气息的生活中心。",
+        "image": "/images/maps/map2_2.png"
+      }
+    ]
+  },
+  {
+    "id": "region-chunxi",
+    "name": "春溪漫滩",
+    "description": "这里是稷下门户，各地学子在百鸣港登陆稷下，在溯洄营地开始自己的入学考试。这里也是昔日古战场，残留的遗迹成为了初级学子的试炼之地。",
+    "coverImage": "/images/maps/chunxi-mantan.jpg",
+    "locations": [
+      {
+        "id": "loc-chunxi",
+        "name": "春溪漫滩",
+        "description": "这里是稷下门户，各地学子在百鸣港登陆稷下，在溯洄营地开始自己的入学考试。这里也是昔日古战场，残留的遗迹成为了初级学子的试炼之地。",
+        "image": "/images/maps/chunxi-mantan.jpg"
+      },
+      {
+        "id": "loc-chunxiyuan",
+        "name": "春溪原",
+        "description": "无边原野和古老遗迹，皆萦绕在稷下学子活跃的气氛中。",
+        "image": "/images/maps/map3_1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "region-shuangyun",
+    "name": "云落远山",
+    "description": "霜云镇百家齐聚霜云镇，在此展示百家特色凸显各自才能广招贤才，就连归虚梦演的冠军-曜都在此定居。",
+    "coverImage": "/images/maps/shuangyun-zhen.jpg",
+    "locations": [
+      {
+        "id": "loc-shuangyun",
+        "name": "霜云镇",
+        "description": "百家齐聚霜云镇，在此展示百家特色凸显各自才能广招贤才，就连归虚梦演的冠军-曜都在此定居。",
+        "image": "/images/maps/shuangyun-zhen.jpg"
+      },
+      {
+        "id": "loc-xiyunluo",
+        "name": "西云落高地",
+        "description": "云丝丰茂的秀美之境，吸引百家来此游历，渐成百家聚集之地。",
+        "image": "/images/maps/map4_1.jpg"
+      },
+      {
+        "id": "loc-dongyunluo",
+        "name": "东云落高地",
+        "description": "危险而神秘的高地上，四散着失落文明的古迹。",
+        "image": "/images/maps/map4_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "region-dixia",
+    "name": "地下世界",
+    "description": "在稷下的土地之下，深藏着数个不为人知的庞大空间。深邃的溶洞、青铜的巨兽与沉寂的遗迹，它们讲述着一段段被时光尘封的谜语，静候探索者的脚步。",
+    "coverImage": "/images/maps/dixia-shijie.jpg",
+    "locations": [
+      {
+        "id": "loc-dixia",
+        "name": "地下世界",
+        "description": "在稷下的土地之下，深藏着数个不为人知的庞大空间。深邃的溶洞、青铜的巨兽与沉寂的遗迹，它们讲述着一段段被时光尘封的谜语，静候探索者的脚步。",
+        "image": "/images/maps/dixia-shijie.jpg"
+      },
+      {
+        "id": "loc-tianzhu",
+        "name": "天柱墟",
+        "description": "埋葬于地下的巨大溶洞，由巨大的柱体支撑洞穴穹顶，辉煌的青铜建筑静默诉说着逝去的文明。",
+        "image": "/images/maps/map5_1.jpg"
+      }
+    ]
+  }
+]

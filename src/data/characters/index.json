@@ -1,0 +1,123 @@
+[
+  {
+    "id": "char-yuanliu",
+    "name": "元流之子",
+    "title": "失去过往记忆的稷下新生",
+    "element": "光",
+    "weaponType": "剑",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/yuanliu.jpg",
+    "description": "失去过往记忆的稷下新生，故事的主角，游历世界的旅者，玩家的化身。"
+  },
+  {
+    "id": "char-dongfangyao",
+    "name": "东方曜",
+    "title": "星之队队长",
+    "element": "雷",
+    "weaponType": "剑",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/dongfang-yao.jpg",
+    "description": "星之队队长，星辰之力继承人。为了守护同伴担负起更多责任而不断精进努力。"
+  },
+  {
+    "id": "char-xishi",
+    "name": "西施",
+    "title": "星之队宝藏少女",
+    "element": "草",
+    "weaponType": "法杖",
+    "rarity": 5,
+    "role": "辅助",
+    "avatar": "/images/characters/xishi.jpg",
+    "description": "星之队的门面，寻宝高手，宝藏少女。比珍宝更想要的，是被珍藏的心意。"
+  },
+  {
+    "id": "char-sunbin",
+    "name": "孙膑",
+    "title": "时光守护者",
+    "element": "风",
+    "weaponType": "法杖",
+    "rarity": 5,
+    "role": "辅助",
+    "avatar": "/images/characters/sunbin.jpg",
+    "description": "星之队的团宠，想探索时空之门的奥秘，是用意志力雕刻时间的小可爱。"
+  },
+  {
+    "id": "char-mengya",
+    "name": "蒙犽",
+    "title": "火力全开",
+    "element": "火",
+    "weaponType": "弓",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/meng-ya.jpg",
+    "description": "星之队的团霸兼火药，制炮高手。脾气像他的火炮一样会'不点自燃'。"
+  },
+  {
+    "id": "char-lubanmaster",
+    "name": "鲁班大师",
+    "title": "神匠",
+    "element": "雷",
+    "weaponType": "锤",
+    "rarity": 5,
+    "role": "辅助",
+    "avatar": "/images/characters/luban-master.jpg",
+    "description": "星之队的团魂，真正的机关大师。用冰冷的机关创造柔情；用真理的蓝图创造未来。"
+  },
+  {
+    "id": "char-lengchun",
+    "name": "冷春",
+    "title": "血刃医者",
+    "element": "暗",
+    "weaponType": "剑",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/lengchun.jpg",
+    "description": "稷下学院的校医，对魔药有着超乎常人的研究理解。踏过不为人知的过往，迈入稷下之时，寒尽春生。"
+  },
+  {
+    "id": "char-huamulan",
+    "name": "花木兰",
+    "title": "无双剑士",
+    "element": "火",
+    "weaponType": "剑",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/huamulan.jpg",
+    "description": "长城守卫军的领袖，巾帼英雄。不追逐猎物，而是追逐正义的战士。"
+  },
+  {
+    "id": "char-kai",
+    "name": "铠",
+    "title": "青龙志",
+    "element": "冰",
+    "weaponType": "剑",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/kai.jpg",
+    "description": "原海都家族的长子，继承了魔铠之力。为了摆脱宿命的折磨而远离家乡，如今是长城守卫军的一员。"
+  },
+  {
+    "id": "char-wangzhaojun",
+    "name": "王昭君",
+    "title": "冰霜掌控者",
+    "element": "冰",
+    "weaponType": "法杖",
+    "rarity": 5,
+    "role": "控制",
+    "avatar": "/images/characters/wang-zhaojun.jpg",
+    "description": "远赴狼旗的和亲郡主，独守北荒的冰雪神女，用温柔坚韧的底色守护一方和平。"
+  },
+  {
+    "id": "char-jialuo",
+    "name": "伽罗",
+    "title": "破魔之箭",
+    "element": "风",
+    "weaponType": "弓",
+    "rarity": 5,
+    "role": "输出",
+    "avatar": "/images/characters/jialuo.jpg",
+    "description": "千窟守护者，文明记录人。志在驱逐愚昧的漂泊旅人，持破魔之弓，佑太平无忧。"
+  }
+]
