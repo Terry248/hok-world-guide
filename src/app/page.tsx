@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getFeaturedCharacters } from '@/lib/characters';
 import { getGuides, getQuests, getCombatGuides } from '@/lib/guides';
 import { getAllRegions } from '@/lib/maps';
@@ -6,7 +7,7 @@ import { CharacterCard } from '@/components/characters/character-card';
 import { GuideCard } from '@/components/guides/guide-card';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { SearchAutocomplete } from '@/components/search/search-autocomplete';
-import { Sword, BookOpen, Map, Users, Shield, Compass, Globe, MessageSquare } from 'lucide-react';
+import { Sword, Map, Users, Shield, Compass, Globe, MessageSquare } from 'lucide-react';
 
 export default function HomePage() {
   const heroes = getFeaturedCharacters(6);
@@ -94,11 +95,13 @@ export default function HomePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {regions.map((region) => (
             <Link key={region.id} href={`/maps/${region.id}`} className="group block bg-card rounded-xl border border-border overflow-hidden hover:border-primary/50 transition-all">
-              <div className="h-24 bg-gradient-to-b from-card-hover to-card flex items-center justify-center overflow-hidden">
+              <div className="relative h-24 bg-gradient-to-b from-card-hover to-card flex items-center justify-center overflow-hidden">
                 {region.coverImage ? (
-                  <img 
-                    src={region.coverImage} 
+                  <Image
+                    src={region.coverImage}
                     alt={region.name}
+                    fill
+                    sizes="(min-width: 1024px) 20vw, (min-width: 640px) 33vw, 100vw"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 ) : (

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTeamStore } from '@/stores/team-store';
 import type { Character } from '@/types';
 import { ElementIcon } from '@/components/shared/element-icon';
@@ -40,9 +41,11 @@ export function TeamSelectorClient({ allCharacters }: { allCharacters: Character
           >
             {member ? (
               <>
-                <img 
-                  src={member.avatar} 
+                <Image
+                  src={member.avatar}
                   alt={member.name}
+                  fill
+                  sizes="25vw"
                   className="w-full h-full object-cover object-[center_15%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
@@ -106,9 +109,11 @@ export function TeamSelectorClient({ allCharacters }: { allCharacters: Character
                 }}
                 className="flex items-center gap-2 p-2 rounded-lg hover:bg-card-hover border border-transparent hover:border-border transition-colors text-left"
               >
-                <img 
-                  src={char.avatar} 
+                <Image
+                  src={char.avatar}
                   alt={char.name}
+                  width={40}
+                  height={40}
                   className="w-10 h-10 rounded-lg object-cover object-[center_15%] flex-shrink-0"
                 />
                 <div className="min-w-0">

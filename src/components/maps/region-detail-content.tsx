@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { RegionDetail, ChestType } from '@/types';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { Badge } from '@/components/shared/badge';
@@ -50,10 +51,12 @@ export function RegionDetailContent({ region }: RegionDetailContentProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {region.locations.map((loc) => (
             <div key={loc.id} className="bg-card rounded-xl border border-border overflow-hidden group">
-              <div className="aspect-[16/9] overflow-hidden">
-                <img 
-                  src={loc.image} 
+              <div className="relative aspect-[16/9] overflow-hidden">
+                <Image
+                  src={loc.image}
                   alt={loc.name}
+                  fill
+                  sizes="(min-width: 640px) 50vw, 100vw"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>

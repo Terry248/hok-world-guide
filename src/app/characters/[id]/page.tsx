@@ -5,7 +5,6 @@ import { CharacterDetailHeader } from '@/components/characters/character-detail-
 import { SkillList } from '@/components/characters/skill-list';
 import { ConstellationList } from '@/components/characters/constellation-list';
 import { BuildRecommendation } from '@/components/characters/build-recommendation';
-import { MarkdownRenderer } from '@/components/guides/markdown-renderer';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { ScrollText, MapPin } from 'lucide-react';
 

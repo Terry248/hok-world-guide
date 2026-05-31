@@ -1,8 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getWorldData, getCharacterOrigin } from '@/lib/world';
-import { SectionHeading } from '@/components/shared/section-heading';
 import { Tabs } from '@/components/shared/tabs';
-import { Globe, MapPin, Star, Landmark, ExternalLink, ChevronRight, Sparkles, Compass } from 'lucide-react';
+import { Globe, MapPin, Star, Landmark, ExternalLink, ChevronRight, Sparkles } from 'lucide-react';
 
 export default function WorldPage() {
   const world = getWorldData();
@@ -69,7 +69,7 @@ export default function WorldPage() {
                   <div className="p-5">
                     <div className="flex items-center gap-3 mb-3">
                       {region.icon && (
-                        <img src={region.icon} alt={region.name} className="w-10 h-10 object-contain" />
+                        <Image src={region.icon} alt={region.name} width={40} height={40} className="object-contain" />
                       )}
                       <div>
                         <div className="flex items-center gap-2">
@@ -127,9 +127,11 @@ export default function WorldPage() {
                     className="group bg-card rounded-xl border border-border overflow-hidden hover:border-primary/50 transition-all"
                   >
                     <div className="relative h-40 overflow-hidden">
-                      <img
+                      <Image
                         src={char.image}
                         alt={char.name}
+                        fill
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                         className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />

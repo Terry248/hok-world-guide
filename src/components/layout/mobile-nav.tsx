@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Sword } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 
 export function MobileNav() {

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Sword, Search, Menu, X } from 'lucide-react';
+import { Sword, Search } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { MobileNav } from './mobile-nav';
 

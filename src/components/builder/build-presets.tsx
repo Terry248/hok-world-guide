@@ -2,7 +2,7 @@
 
 import { useTeamStore } from '@/stores/team-store';
 import type { Character } from '@/types';
-import { Zap, Shield, Flame, Snowflake } from 'lucide-react';
+import { Zap, Shield, Flame } from 'lucide-react';
 
 const PRESETS = [
   {

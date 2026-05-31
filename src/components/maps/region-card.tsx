@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Region } from '@/types';
 import { Badge } from '@/components/shared/badge';
 
@@ -9,11 +10,13 @@ interface RegionCardProps {
 export function RegionCard({ region }: RegionCardProps) {
   return (
     <Link href={`/maps/${region.id}`} className="group block bg-card rounded-xl border border-border overflow-hidden hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10">
-      <div className="h-40 bg-gradient-to-b from-card-hover to-card flex items-center justify-center overflow-hidden">
+      <div className="relative h-40 bg-gradient-to-b from-card-hover to-card flex items-center justify-center overflow-hidden">
         {region.coverImage ? (
-          <img 
-            src={region.coverImage} 
+          <Image
+            src={region.coverImage}
             alt={region.name}
+            fill
+            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
         ) : (

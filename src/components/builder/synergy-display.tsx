@@ -1,9 +1,11 @@
 'use client';
 
+import Image from 'next/image';
 import { useTeamStore } from '@/stores/team-store';
 import { ElementIcon } from '@/components/shared/element-icon';
 import { Badge } from '@/components/shared/badge';
 import { Zap, Shield, Users, Star, Flame, Snowflake, Wind, Sun, Moon, Sprout } from 'lucide-react';
+import type { Element } from '@/types';
 
 // 羁绊定义
 const BONDS = {
@@ -46,6 +48,10 @@ const ELEMENT_SYNERGIES: Record<string, { name: string; effect: string; icon: Re
   '暗': { name: '暗影共鸣', effect: '全队暴击伤害+20%', icon: <Moon className="w-4 h-4" />, minCount: 2 },
   '草': { name: '生机共鸣', effect: '全队生命恢复+15%', icon: <Sprout className="w-4 h-4" />, minCount: 2 },
 };
+
+function isElement(value: string): value is Element {
+  return value in ELEMENT_SYNERGIES;
+}
 
 export function SynergyDisplay() {
   const { team } = useTeamStore();
@@ -157,7 +163,7 @@ export function SynergyDisplay() {
               <div key={i} className="bg-card rounded-lg p-3 border border-border">
                 <div className="flex items-center justify-between">
                   <span className="font-medium text-sm flex items-center gap-1.5">
-                    <ElementIcon element={el.element as any} size={14} />
+                    {isElement(el.element) && <ElementIcon element={el.element} size={14} />}
                     {el.name}
                   </span>
                   <span className="text-xs text-text-muted">
@@ -202,7 +208,7 @@ export function SynergyDisplay() {
         <div className="space-y-1.5">
           {members.map((m) => (
             <div key={m.id} className="flex items-center gap-2 bg-background p-2 rounded">
-              <img src={m.avatar} alt={m.name} className="w-8 h-8 rounded object-cover object-[center_15%]" />
+              <Image src={m.avatar} alt={m.name} width={32} height={32} className="w-8 h-8 rounded object-cover object-[center_15%]" />
               <span className="text-sm">{m.name}</span>
               <ElementIcon element={m.element} size={12} />
               <Badge label={m.role} className="ml-auto text-xs" />

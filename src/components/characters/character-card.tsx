@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Character } from '@/types';
 import { RarityStars } from '@/components/shared/rarity-stars';
 import { ElementIcon } from '@/components/shared/element-icon';
@@ -11,13 +12,14 @@ interface CharacterCardProps {
 export function CharacterCard({ character }: CharacterCardProps) {
   return (
     <Link href={`/characters/${character.id}`} className="group block bg-card rounded-xl border border-border overflow-hidden hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10 animate-slide-up">
-      <div className="aspect-[4/3] bg-gradient-to-b from-card-hover to-card flex items-center justify-center overflow-hidden">
+      <div className="relative aspect-[4/3] bg-gradient-to-b from-card-hover to-card flex items-center justify-center overflow-hidden">
         {character.avatar ? (
-          <img 
-            src={character.avatar.replace('/images/characters/', '/images/characters/thumbs/')} 
+          <Image
+            src={character.avatar.replace('/images/characters/', '/images/characters/thumbs/')}
             alt={character.name}
+            fill
+            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
             className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
           />
         ) : (
           <div className="text-6xl opacity-30 group-hover:opacity-50 transition-opacity">🎭</div>

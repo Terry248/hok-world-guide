@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 interface TOCItem {
   id: string;
@@ -13,10 +13,9 @@ interface TableOfContentsProps {
 }
 
 export function TableOfContents({ content }: TableOfContentsProps) {
-  const [headings, setHeadings] = useState<TOCItem[]>([]);
   const [activeId, setActiveId] = useState('');
 
-  useEffect(() => {
+  const headings = useMemo(() => {
     const regex = /^(#{1,3})\s+(.+)$/gm;
     const items: TOCItem[] = [];
     let match;
@@ -26,7 +25,7 @@ export function TableOfContents({ content }: TableOfContentsProps) {
       const id = text.replace(/\s+/g, '-').toLowerCase();
       items.push({ id, text, level });
     }
-    setHeadings(items);
+    return items;
   }, [content]);
 
   useEffect(() => {

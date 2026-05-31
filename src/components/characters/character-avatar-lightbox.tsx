@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 import { X, Download } from 'lucide-react';
 
@@ -16,12 +17,14 @@ export function CharacterAvatarLightbox({ src, alt }: CharacterAvatarLightboxPro
       {/* 可点击的头像 */}
       <button
         onClick={() => setIsOpen(true)}
-        className="w-full h-full rounded-xl overflow-hidden cursor-zoom-in hover:ring-2 hover:ring-primary/50 transition-all"
+        className="relative w-full h-full rounded-xl overflow-hidden cursor-zoom-in hover:ring-2 hover:ring-primary/50 transition-all"
         title="点击查看完整全身像"
       >
-        <img
+        <Image
           src={src}
           alt={alt}
+          fill
+          sizes="(min-width: 768px) 320px, 100vw"
           className="w-full h-full object-cover"
         />
       </button>
@@ -47,15 +50,15 @@ export function CharacterAvatarLightbox({ src, alt }: CharacterAvatarLightboxPro
           </div>
 
           {/* 大图 */}
-          <img
-            src={src}
-            alt={alt}
-            className="max-w-[95vw] max-h-[90vh] object-contain select-none"
-            onClick={(e) => e.stopPropagation()}
-            onContextMenu={(e) => {
-              // 允许右键菜单，让用户保存
-            }}
-          />
+          <div className="relative w-[95vw] h-[90vh]" onClick={(e) => e.stopPropagation()}>
+            <Image
+              src={src}
+              alt={alt}
+              fill
+              sizes="95vw"
+              className="object-contain select-none"
+            />
+          </div>
 
           {/* 底部提示 */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/50 text-xs">

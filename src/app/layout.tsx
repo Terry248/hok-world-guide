@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { AdSidebar } from "@/components/layout/ad-sidebar";
 import { FEATURES, IS_DOMESTIC } from "@/lib/site-config";
+import { GDT_CONFIG } from "@/lib/ad-config";
 
 export const metadata: Metadata = {
   title: {
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" className="dark">
       <head>
+        {/* Google AdSense — 仅海外版加载 */}
         {FEATURES.ads && !IS_DOMESTIC && (
           <script
             async
@@ -28,8 +30,14 @@ export default function RootLayout({
             crossOrigin="anonymous"
           />
         )}
-        {IS_DOMESTIC && (
-          <meta name="baidu_union_verify" content="6b0ad2c94e00497a93cf52d6a7065914" />
+
+        {/* 腾讯优量汇 — 仅国内版加载（有appId时） */}
+        {FEATURES.ads && IS_DOMESTIC && GDT_CONFIG.appId && (
+          <script
+            async
+            src="https://qzs.gdtimg.com/native/native_render_v2.js"
+            data-appid={GDT_CONFIG.appId}
+          />
         )}
       </head>
       <body className="font-sans min-h-screen flex flex-col">

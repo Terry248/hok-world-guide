@@ -4,7 +4,7 @@ import { Tabs } from '@/components/shared/tabs';
 import {
   BookOpen, Compass, Sword, Users, Zap, Map, Shield,
   ChevronRight, Star, Lightbulb, HelpCircle, Target,
-  Clock, Trophy, Heart, ScrollText, Sparkles, Home,
+  Clock, Trophy, ScrollText, Sparkles, Home,
   MessageCircle, Fish, Eye, Dna, GraduationCap, Mountain, Anchor
 } from 'lucide-react';
 

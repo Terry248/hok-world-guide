@@ -32,7 +32,9 @@ export function MessageBoard() {
   }, [filter, sort]);
 
   useEffect(() => {
-    load();
+    queueMicrotask(() => {
+      void load();
+    });
   }, [load]);
 
   const handleSubmit = useCallback(async () => {

@@ -52,8 +52,6 @@ export function SearchAutocomplete({
   // 实时搜索建议（通过 API）
   useEffect(() => {
     if (query.trim().length === 0) {
-      setSuggestions([]);
-      setOpen(false);
       return;
     }
     const timer = setTimeout(async () => {
@@ -128,7 +126,15 @@ export function SearchAutocomplete({
         ref={inputRef}
         type="text"
         value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => {
+          const nextQuery = e.target.value;
+          setQuery(nextQuery);
+          if (!nextQuery.trim()) {
+            setSuggestions([]);
+            setHighlightIndex(-1);
+            setOpen(false);
+          }
+        }}
         onKeyDown={handleKeyDown}
         onFocus={() => query.trim() && suggestions.length > 0 && setOpen(true)}
         placeholder={placeholder}
@@ -185,7 +191,7 @@ export function SearchAutocomplete({
                 className="text-xs text-primary hover:text-primary-hover flex items-center gap-1"
               >
                 <Search className="w-3 h-3" />
-                查看 "{query}" 的全部搜索结果
+                查看“{query}”的全部搜索结果
               </button>
             </div>
           )}

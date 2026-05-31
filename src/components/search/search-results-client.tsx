@@ -60,7 +60,7 @@ export function SearchResultsClient({ initialQuery, initialResults, typeCount }:
       {initialQuery && initialResults.length === 0 && (
         <div className="text-center py-12 text-text-muted">
           <Search className="w-12 h-12 mx-auto mb-3 opacity-30" />
-          <p>未找到与 "{initialQuery}" 相关的内容</p>
+          <p>未找到与“{initialQuery}”相关的内容</p>
           <p className="text-sm mt-1 opacity-60">尝试使用其他关键词</p>
         </div>
       )}
